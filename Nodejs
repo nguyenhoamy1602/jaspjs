@@ -1,0 +1,1722 @@
+Last login: Tue May  9 12:38:04 on ttys002
+Nguyens-Air:express-authentication nmy$ npm install passport --save
+express-authentication@0.0.0 /Users/nmy/my-webapp/express-authentication
+└─┬ passport@0.3.2 
+  ├── passport-strategy@1.0.0 
+  └── pause@0.0.1 
+
+Nguyens-Air:express-authentication nmy$ npm install passport-local --save
+express-authentication@0.0.0 /Users/nmy/my-webapp/express-authentication
+└── passport-local@1.0.0 
+
+Nguyens-Air:express-authentication nmy$ npm install mongoose --save
+express-authentication@0.0.0 /Users/nmy/my-webapp/express-authentication
+└─┬ mongoose@4.9.8 
+  ├─┬ async@2.1.4 
+  │ └── lodash@4.17.4 
+  ├── bson@1.0.4 
+  ├── hooks-fixed@2.0.0 
+  ├── kareem@1.4.1 
+  ├─┬ mongodb@2.2.26 
+  │ ├── es6-promise@3.2.1 
+  │ ├─┬ mongodb-core@2.1.10 
+  │ │ └─┬ require_optional@1.0.0 
+  │ │   ├── resolve-from@2.0.0 
+  │ │   └── semver@5.3.0 
+  │ └─┬ readable-stream@2.2.7 
+  │   ├── buffer-shims@1.0.0 
+  │   ├── core-util-is@1.0.2 
+  │   ├── isarray@1.0.0 
+  │   ├── process-nextick-args@1.0.7 
+  │   ├── string_decoder@1.0.0 
+  │   └── util-deprecate@1.0.2 
+  ├── mpath@0.2.1 
+  ├── mpromise@0.5.5 
+  ├─┬ mquery@2.3.0 
+  │ ├── bluebird@2.10.2 
+  │ ├─┬ debug@2.2.0 
+  │ │ └── ms@0.7.1 
+  │ └── sliced@0.0.5 
+  ├── muri@1.2.1 
+  ├── regexp-clone@0.0.1 
+  └── sliced@1.0.1 
+
+Nguyens-Air:express-authentication nmy$ npm i bcrypt-nodejs connect-flase --save
+npm ERR! Darwin 16.4.0
+npm ERR! argv "/usr/local/Cellar/node/7.7.4/bin/node" "/usr/local/bin/npm" "i" "bcrypt-nodejs" "connect-flase" "--save"
+npm ERR! node v7.7.4
+npm ERR! npm  v4.1.2
+npm ERR! code E404
+
+npm ERR! 404 Registry returned 404 for GET on https://registry.npmjs.org/connect-flase
+npm ERR! 404 
+npm ERR! 404  'connect-flase' is not in the npm registry.
+npm ERR! 404 You should bug the author to publish it (or use the name yourself!)
+npm ERR! 404 
+npm ERR! 404 Note that you can also install from a
+npm ERR! 404 tarball, folder, http url, or git url.
+
+npm ERR! Please include the following file with any support request:
+npm ERR!     /Users/nmy/my-webapp/express-authentication/npm-debug.log
+Nguyens-Air:express-authentication nmy$ npm i bcrypt-nodejs connect-flash --save 
+express-authentication@0.0.0 /Users/nmy/my-webapp/express-authentication
+├── bcrypt-nodejs@0.0.3 
+└── connect-flash@0.1.1 
+
+Nguyens-Air:express-authentication nmy$ npm i express-session --save
+express-authentication@0.0.0 /Users/nmy/my-webapp/express-authentication
+└─┬ express-session@1.15.2 
+  ├── crc@3.4.4 
+  ├── debug@2.6.3 
+  └─┬ uid-safe@2.1.4 
+    └── random-bytes@1.0.0 
+
+Nguyens-Air:express-authentication nmy$ node app
+express-session deprecated undefined resave option; provide resave option app.js:34:9
+express-session deprecated undefined saveUninitialized option; provide saveUninitialized option app.js:34:9
+events.js:163
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::3000
+    at Object.exports._errnoException (util.js:1034:11)
+    at exports._exceptionWithHostPort (util.js:1057:20)
+    at Server._listen2 (net.js:1270:14)
+    at listen (net.js:1306:10)
+    at Server.listen (net.js:1397:7)
+    at Function.listen (/Users/nmy/my-webapp/express-authentication/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/Users/nmy/my-webapp/express-authentication/app.js:66:5)
+    at Module._compile (module.js:571:32)
+    at Object.Module._extensions..js (module.js:580:10)
+    at Module.load (module.js:488:32)
+    at tryModuleLoad (module.js:447:12)
+    at Function.Module._load (module.js:439:3)
+    at Module.runMain (module.js:605:10)
+    at run (bootstrap_node.js:427:7)
+    at startup (bootstrap_node.js:148:9)
+    at bootstrap_node.js:542:3
+Nguyens-Air:express-authentication nmy$ node app
+/Users/nmy/my-webapp/express-authentication/app.js:37
+	store: sessionStore,
+	       ^
+
+ReferenceError: sessionStore is not defined
+    at Object.<anonymous> (/Users/nmy/my-webapp/express-authentication/app.js:37:9)
+    at Module._compile (module.js:571:32)
+    at Object.Module._extensions..js (module.js:580:10)
+    at Module.load (module.js:488:32)
+    at tryModuleLoad (module.js:447:12)
+    at Function.Module._load (module.js:439:3)
+    at Module.runMain (module.js:605:10)
+    at run (bootstrap_node.js:427:7)
+    at startup (bootstrap_node.js:148:9)
+    at bootstrap_node.js:542:3
+Nguyens-Air:express-authentication nmy$ node app
+/Users/nmy/my-webapp/express-authentication/node_modules/express-session/index.js:157
+  store.generate = function(req){
+                 ^
+
+TypeError: Cannot create property 'generate' on string 'sessionStore'
+    at session (/Users/nmy/my-webapp/express-authentication/node_modules/express-session/index.js:157:18)
+    at Object.<anonymous> (/Users/nmy/my-webapp/express-authentication/app.js:34:9)
+    at Module._compile (module.js:571:32)
+    at Object.Module._extensions..js (module.js:580:10)
+    at Module.load (module.js:488:32)
+    at tryModuleLoad (module.js:447:12)
+    at Function.Module._load (module.js:439:3)
+    at Module.runMain (module.js:605:10)
+    at run (bootstrap_node.js:427:7)
+    at startup (bootstrap_node.js:148:9)
+    at bootstrap_node.js:542:3
+Nguyens-Air:express-authentication nmy$ 
+Nguyens-Air:express-authentication nmy$ node app
+events.js:163
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::3000
+    at Object.exports._errnoException (util.js:1034:11)
+    at exports._exceptionWithHostPort (util.js:1057:20)
+    at Server._listen2 (net.js:1270:14)
+    at listen (net.js:1306:10)
+    at Server.listen (net.js:1397:7)
+    at Function.listen (/Users/nmy/my-webapp/express-authentication/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/Users/nmy/my-webapp/express-authentication/app.js:73:5)
+    at Module._compile (module.js:571:32)
+    at Object.Module._extensions..js (module.js:580:10)
+    at Module.load (module.js:488:32)
+    at tryModuleLoad (module.js:447:12)
+    at Function.Module._load (module.js:439:3)
+    at Module.runMain (module.js:605:10)
+    at run (bootstrap_node.js:427:7)
+    at startup (bootstrap_node.js:148:9)
+    at bootstrap_node.js:542:3
+Nguyens-Air:express-authentication nmy$ node app
+Nguyens-Air:express-authentication nmy$ mkdir config
+Nguyens-Air:express-authentication nmy$ touch config/database.js
+Nguyens-Air:express-authentication nmy$ mkdir models
+Nguyens-Air:express-authentication nmy$ touch models/user.js
+Nguyens-Air:express-authentication nmy$ touch views/login.ejs
+Nguyens-Air:express-authentication nmy$ touch views/signup.ejs
+Nguyens-Air:express-authentication nmy$ touch views/profile.ejs
+Nguyens-Air:express-authentication nmy$ mkdir views/partials
+Nguyens-Air:express-authentication nmy$ touch views/partials/head.ejs
+Nguyens-Air:express-authentication nmy$ touch config/passport.js
+Nguyens-Air:express-authentication nmy$ git clone https://github.com/danielgynn/express-authentication.git
+Cloning into 'express-authentication'...
+remote: Counting objects: 187, done.
+remote: Total 187 (delta 0), reused 0 (delta 0), pack-reused 187
+Receiving objects: 100% (187/187), 22.99 KiB | 0 bytes/s, done.
+Resolving deltas: 100% (91/91), done.
+Nguyens-Air:express-authentication nmy$ cd express-authentication
+Nguyens-Air:express-authentication nmy$ npm install
+express-authentication@0.0.0 /Users/nmy/my-webapp/express-authentication/express-authentication
+├── bcrypt-nodejs@0.0.3 
+├─┬ body-parser@1.13.3 
+│ ├── bytes@2.1.0 
+│ ├── content-type@1.0.2 
+│ ├── depd@1.0.1 
+│ ├─┬ http-errors@1.3.1 
+│ │ ├── inherits@2.0.3 
+│ │ └── statuses@1.3.1 
+│ ├── iconv-lite@0.4.11 
+│ ├─┬ on-finished@2.3.0 
+│ │ └── ee-first@1.1.1 
+│ ├── qs@4.0.0 
+│ ├─┬ raw-body@2.1.7 
+│ │ ├── bytes@2.4.0 
+│ │ ├── iconv-lite@0.4.13 
+│ │ └── unpipe@1.0.0 
+│ └─┬ type-is@1.6.15 
+│   ├── media-typer@0.3.0 
+│   └─┬ mime-types@2.1.15 
+│     └── mime-db@1.27.0 
+├── connect-flash@0.1.1 
+├─┬ cookie-parser@1.3.5 
+│ ├── cookie@0.1.3 
+│ └── cookie-signature@1.0.6 
+├─┬ debug@2.2.0 
+│ └── ms@0.7.1 
+├── ejs@2.3.4 
+├─┬ express@4.13.4 
+│ ├─┬ accepts@1.2.13 
+│ │ └── negotiator@0.5.3 
+│ ├── array-flatten@1.1.1 
+│ ├── content-disposition@0.5.1 
+│ ├── cookie@0.1.5 
+│ ├── depd@1.1.0 
+│ ├── escape-html@1.0.3 
+│ ├── etag@1.7.0 
+│ ├── finalhandler@0.4.1 
+│ ├── fresh@0.3.0 
+│ ├── merge-descriptors@1.0.1 
+│ ├── methods@1.1.2 
+│ ├── parseurl@1.3.1 
+│ ├── path-to-regexp@0.1.7 
+│ ├─┬ proxy-addr@1.0.10 
+│ │ ├── forwarded@0.1.0 
+│ │ └── ipaddr.js@1.0.5 
+│ ├── range-parser@1.0.3 
+│ ├─┬ send@0.13.1 
+│ │ ├── depd@1.1.0 
+│ │ ├── destroy@1.0.4 
+│ │ ├── mime@1.3.4 
+│ │ └── statuses@1.2.1 
+│ ├─┬ serve-static@1.10.3 
+│ │ └─┬ send@0.13.2 
+│ │   ├── depd@1.1.0 
+│ │   └── statuses@1.2.1 
+│ ├── utils-merge@1.0.0 
+│ └── vary@1.0.1 
+├─┬ express-session@1.15.2 
+│ ├── cookie@0.3.1 
+│ ├── crc@3.4.4 
+│ ├─┬ debug@2.6.3 
+│ │ └── ms@0.7.2 
+│ ├── depd@1.1.0 
+│ ├── on-headers@1.0.1 
+│ └─┬ uid-safe@2.1.4 
+│   └── random-bytes@1.0.0 
+├─┬ mongoose@4.9.8 
+│ ├─┬ async@2.1.4 
+│ │ └── lodash@4.17.4 
+│ ├── bson@1.0.4 
+│ ├── hooks-fixed@2.0.0 
+│ ├── kareem@1.4.1 
+│ ├─┬ mongodb@2.2.26 
+│ │ ├── es6-promise@3.2.1 
+│ │ ├─┬ mongodb-core@2.1.10 
+│ │ │ └─┬ require_optional@1.0.0 
+│ │ │   ├── resolve-from@2.0.0 
+│ │ │   └── semver@5.3.0 
+│ │ └─┬ readable-stream@2.2.7 
+│ │   ├── buffer-shims@1.0.0 
+│ │   ├── core-util-is@1.0.2 
+│ │   ├── isarray@1.0.0 
+│ │   ├── process-nextick-args@1.0.7 
+│ │   ├── string_decoder@1.0.0 
+│ │   └── util-deprecate@1.0.2 
+│ ├── mpath@0.2.1 
+│ ├── mpromise@0.5.5 
+│ ├─┬ mquery@2.3.0 
+│ │ ├── bluebird@2.10.2 
+│ │ └── sliced@0.0.5 
+│ ├── ms@0.7.2 
+│ ├── muri@1.2.1 
+│ ├── regexp-clone@0.0.1 
+│ └── sliced@1.0.1 
+├─┬ morgan@1.6.1 
+│ └── basic-auth@1.0.4 
+├─┬ passport@0.3.2 
+│ ├── passport-strategy@1.0.0 
+│ └── pause@0.0.1 
+├─┬ passport-facebook@2.1.1 
+│ └─┬ passport-oauth2@1.4.0 
+│   ├── oauth@0.9.15 
+│   └── uid2@0.0.3 
+├─┬ passport-google-oauth@0.2.0 
+│ ├── passport-oauth@1.0.0 
+│ └── pkginfo@0.3.1 
+├── passport-local@1.0.0 
+├─┬ passport-twitter@1.0.4 
+│ ├── passport-oauth1@1.1.0 
+│ └─┬ xtraverse@0.1.0 
+│   └── xmldom@0.1.27 
+└─┬ serve-favicon@2.3.2 
+  └── ms@0.7.2 
+
+Nguyens-Air:express-authentication nmy$ node app
+^C
+Nguyens-Air:express-authentication nmy$ node app.js
+^C
+Nguyens-Air:express-authentication nmy$ node app.js
+GET /login 200 42.312 ms - 1370
+GET / 200 10.322 ms - 1381
+GET /login 304 8.313 ms - -
+GET /signup 200 5.091 ms - 1373
+(node:5438) DeprecationWarning: Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+POST /signup 302 346.724 ms - 60
+GET /profile 200 29.082 ms - 1094
+GET / 304 14.292 ms - -
+GET /auth/facebook 302 35.357 ms - 0
+GET /auth/facebook/callback?error_code=4201&error_message=User+canceled+the+Dialog+flow 500 13.753 ms - 3021
+GET /login 304 8.877 ms - -
+POST /login 302 72.519 ms - 60
+GET /profile 304 5.339 ms - -
+GET / 200 7.358 ms - 1427
+GET /images/background-image.jpeg 200 6.847 ms - 506649
+GET /favicon.ico 404 4.022 ms - 2868
+GET /images/background-image.jpeg 304 4.661 ms - -
+GET / 200 6.003 ms - 2443
+GET /favicon.ico 404 16.901 ms - 3151
+GET /css/ionicons.min.css 200 6.785 ms - 51284
+GET /css/owl.carousel.css 200 4.932 ms - 3630
+GET /css/main.css 200 8.925 ms - 9419
+GET /js/bootstrap.min.js 200 7.398 ms - 35452
+GET /css/owl.theme.css 200 6.565 ms - 1055
+GET /css/flexslider.css 200 6.655 ms - 7162
+GET /js/jquery-1.11.2.min.js 200 6.305 ms - 95931
+GET /images/background-image.jpeg 304 2.046 ms - -
+GET /js/contact.js 200 6.312 ms - 4118
+GET /js/script.js 200 4.869 ms - 2368
+GET /js/jquery.flexslider.js 200 6.549 ms - 54915
+GET /js/owl.carousel.min.js 200 5.930 ms - 40401
+GET /fonts/ionicons.ttf?v=2.0.0 404 2.055 ms - 3151
+GET /fonts/ionicons.woff?v=2.0.0 404 1.694 ms - 3151
+GET /fonts/ionicons.svg?v=2.0.0 404 1.411 ms - 3151
+GET /login 200 3.881 ms - 1653
+GET /css/ionicons.min.css 304 3.003 ms - -
+GET /css/owl.carousel.css 304 2.168 ms - -
+GET /css/owl.theme.css 304 2.382 ms - -
+GET /css/flexslider.css 304 4.446 ms - -
+GET /css/main.css 304 4.859 ms - -
+GET / 200 2.250 ms - 2397
+GET /css/owl.carousel.css 304 1.760 ms - -
+GET /css/owl.theme.css 304 2.667 ms - -
+GET /css/ionicons.min.css 304 2.164 ms - -
+GET /css/flexslider.css 304 1.895 ms - -
+GET /css/main.css 304 2.717 ms - -
+GET /js/bootstrap.min.js 304 2.922 ms - -
+GET /js/owl.carousel.min.js 304 1.157 ms - -
+GET /js/jquery-1.11.2.min.js 304 2.272 ms - -
+GET /js/contact.js 304 2.130 ms - -
+GET /js/jquery.flexslider.js 304 2.221 ms - -
+GET /js/script.js 304 1.976 ms - -
+GET /fonts/ionicons.ttf?v=2.0.0 404 2.241 ms - 3151
+GET /fonts/ionicons.woff?v=2.0.0 404 1.560 ms - 3151
+GET /fonts/ionicons.svg?v=2.0.0 404 1.445 ms - 3151
+GET / 200 5.984 ms - 2397
+GET /css/ionicons.min.css 200 5.220 ms - 51284
+GET /css/owl.carousel.css 200 4.560 ms - 3630
+GET /css/owl.theme.css 200 3.604 ms - 1055
+GET /css/flexslider.css 200 3.595 ms - 7162
+GET /css/main.css 200 3.624 ms - 9419
+GET /js/jquery-1.11.2.min.js 200 3.413 ms - 95931
+GET /js/owl.carousel.min.js 200 1.964 ms - 40401
+GET /js/contact.js 200 3.757 ms - 4118
+GET /js/bootstrap.min.js 200 2.255 ms - 35452
+GET /js/script.js 200 3.355 ms - 2368
+GET /js/jquery.flexslider.js 200 3.252 ms - 54915
+GET /fonts/ionicons.ttf?v=2.0.0 404 2.620 ms - 3151
+GET /fonts/ionicons.woff?v=2.0.0 404 4.865 ms - 3151
+GET /css/ionicons.min.css 304 2.824 ms - -
+GET /css/owl.carousel.css 304 1.890 ms - -
+GET /css/owl.theme.css 304 1.718 ms - -
+GET /css/flexslider.css 304 1.646 ms - -
+GET /css/main.css 304 1.528 ms - -
+GET / 304 3.817 ms - -
+GET /css/ionicons.min.css 304 3.262 ms - -
+GET /css/owl.carousel.css 304 3.281 ms - -
+GET /css/owl.theme.css 304 3.048 ms - -
+GET /css/flexslider.css 304 6.621 ms - -
+GET /css/main.css 304 7.056 ms - -
+GET /js/jquery-1.11.2.min.js 304 9.973 ms - -
+GET /js/bootstrap.min.js 304 8.273 ms - -
+GET /js/owl.carousel.min.js 304 7.318 ms - -
+GET /js/contact.js 304 7.271 ms - -
+GET /js/jquery.flexslider.js 304 6.453 ms - -
+GET /js/script.js 304 5.826 ms - -
+GET /fonts/ionicons.ttf?v=2.0.0 404 4.054 ms - 3151
+GET /fonts/ionicons.woff?v=2.0.0 404 6.523 ms - 3151
+GET / 200 3.604 ms - 3620
+GET /css/ionicons.min.css 304 3.234 ms - -
+GET /css/owl.carousel.css 304 4.290 ms - -
+GET /css/owl.theme.css 304 2.856 ms - -
+GET /css/flexslider.css 304 2.840 ms - -
+GET /css/main.css 304 2.837 ms - -
+GET /js/jquery-1.11.2.min.js 304 3.739 ms - -
+GET /js/bootstrap.min.js 304 1.478 ms - -
+GET /js/owl.carousel.min.js 304 1.499 ms - -
+GET /js/contact.js 304 1.653 ms - -
+GET /js/jquery.flexslider.js 304 2.439 ms - -
+GET /js/script.js 304 2.866 ms - -
+GET /fonts/ionicons.ttf?v=2.0.0 404 5.616 ms - 3151
+GET /fonts/ionicons.woff?v=2.0.0 404 4.805 ms - 3151
+GET /contact.html 404 2.634 ms - 3151
+GET /css/ionicons.min.css 304 0.344 ms - -
+GET /css/owl.carousel.css 304 1.415 ms - -
+GET /css/owl.theme.css 304 1.406 ms - -
+GET /css/flexslider.css 304 1.846 ms - -
+GET /css/main.css 304 1.694 ms - -
+GET /fonts/ionicons.ttf?v=2.0.0 404 1.693 ms - 3151
+GET /fonts/ionicons.woff?v=2.0.0 404 2.750 ms - 3151
+GET / 200 2.709 ms - 3615
+GET /css/ionicons.min.css 304 0.353 ms - -
+GET /css/owl.carousel.css 304 1.249 ms - -
+GET /css/owl.theme.css 304 1.413 ms - -
+GET /css/flexslider.css 304 1.486 ms - -
+GET /css/main.css 304 1.462 ms - -
+GET /js/jquery-1.11.2.min.js 304 1.400 ms - -
+GET /js/bootstrap.min.js 304 2.096 ms - -
+GET /js/owl.carousel.min.js 304 0.880 ms - -
+GET /js/contact.js 304 0.766 ms - -
+GET /js/jquery.flexslider.js 304 1.113 ms - -
+GET /js/script.js 304 1.063 ms - -
+GET /fonts/ionicons.ttf?v=2.0.0 404 2.210 ms - 3151
+GET /fonts/ionicons.woff?v=2.0.0 404 2.637 ms - 3151
+GET /signup 200 3.430 ms - 1656
+GET /css/ionicons.min.css 304 1.360 ms - -
+GET /css/owl.carousel.css 304 1.312 ms - -
+GET /css/owl.theme.css 304 1.283 ms - -
+GET /css/flexslider.css 304 1.273 ms - -
+GET /css/main.css 304 1.182 ms - -
+GET /fonts/ionicons.ttf?v=2.0.0 404 1.637 ms - 3151
+GET /fonts/ionicons.woff?v=2.0.0 404 3.718 ms - 3151
+GET /login 200 10.891 ms - 1653
+GET /css/ionicons.min.css 304 1.781 ms - -
+GET /css/owl.carousel.css 304 1.702 ms - -
+GET /css/owl.theme.css 304 1.299 ms - -
+GET /css/flexslider.css 304 1.441 ms - -
+GET /css/main.css 304 1.497 ms - -
+GET /fonts/ionicons.ttf?v=2.0.0 404 2.300 ms - 3151
+GET /fonts/ionicons.woff?v=2.0.0 404 2.105 ms - 3151
+GET / 304 1.989 ms - -
+GET /css/ionicons.min.css 304 4.469 ms - -
+GET /css/owl.carousel.css 304 3.487 ms - -
+GET /css/owl.theme.css 304 3.028 ms - -
+GET /css/flexslider.css 304 2.949 ms - -
+GET /css/main.css 304 1.662 ms - -
+GET /js/jquery-1.11.2.min.js 304 1.809 ms - -
+GET /js/bootstrap.min.js 304 1.272 ms - -
+GET /js/owl.carousel.min.js 304 1.193 ms - -
+GET /js/contact.js 304 1.234 ms - -
+GET /js/script.js 304 1.113 ms - -
+GET /js/jquery.flexslider.js 304 1.532 ms - -
+GET /fonts/ionicons.ttf?v=2.0.0 404 2.356 ms - 3151
+GET /fonts/ionicons.woff?v=2.0.0 404 2.929 ms - 3151
+GET / 200 3.016 ms - 3566
+GET /css/ionicons.min.css 304 0.393 ms - -
+GET /css/owl.carousel.css 304 3.008 ms - -
+GET /css/owl.theme.css 304 3.160 ms - -
+GET /css/flexslider.css 304 2.396 ms - -
+GET /css/main.css 304 2.365 ms - -
+GET /js/jquery-1.11.2.min.js 304 2.444 ms - -
+GET /js/bootstrap.min.js 304 2.511 ms - -
+GET /js/owl.carousel.min.js 304 0.373 ms - -
+GET /js/contact.js 304 0.839 ms - -
+GET /js/jquery.flexslider.js 304 0.782 ms - -
+GET /js/script.js 304 0.823 ms - -
+GET /fonts/ionicons.ttf?v=2.0.0 404 2.677 ms - 3151
+GET /fonts/ionicons.woff?v=2.0.0 404 2.432 ms - 3151
+GET /signup 304 1.783 ms - -
+GET /css/ionicons.min.css 304 4.169 ms - -
+GET /css/owl.carousel.css 304 1.904 ms - -
+GET /css/owl.theme.css 304 1.838 ms - -
+GET /css/flexslider.css 304 1.487 ms - -
+GET /css/main.css 304 1.447 ms - -
+GET /fonts/ionicons.ttf?v=2.0.0 404 3.246 ms - 3151
+GET /fonts/ionicons.woff?v=2.0.0 404 1.810 ms - 3151
+GET /signup 304 1.967 ms - -
+GET /css/ionicons.min.css 304 0.332 ms - -
+GET /css/owl.carousel.css 304 1.470 ms - -
+GET /css/owl.theme.css 304 1.721 ms - -
+GET /css/flexslider.css 304 1.465 ms - -
+GET /css/main.css 304 1.388 ms - -
+GET /fonts/ionicons.ttf?v=2.0.0 404 1.653 ms - 3151
+GET /fonts/ionicons.woff?v=2.0.0 404 2.979 ms - 3151
+GET / 200 2.577 ms - 3570
+GET /css/ionicons.min.css 304 2.110 ms - -
+GET /css/owl.carousel.css 304 2.073 ms - -
+GET /css/owl.theme.css 304 2.006 ms - -
+GET /css/flexslider.css 304 2.055 ms - -
+GET /js/jquery-1.11.2.min.js 304 1.710 ms - -
+GET /css/main.css 304 3.269 ms - -
+GET /js/bootstrap.min.js 304 3.070 ms - -
+GET /js/owl.carousel.min.js 304 1.471 ms - -
+GET /js/contact.js 304 1.634 ms - -
+GET /js/jquery.flexslider.js 304 1.630 ms - -
+GET /js/script.js 304 1.593 ms - -
+GET /fonts/ionicons.ttf?v=2.0.0 404 2.742 ms - 3151
+GET /fonts/ionicons.woff?v=2.0.0 404 3.896 ms - 3151
+GET / 304 4.793 ms - -
+GET /css/ionicons.min.css 304 0.453 ms - -
+GET /css/owl.carousel.css 304 1.303 ms - -
+GET /css/owl.theme.css 304 1.360 ms - -
+GET /css/flexslider.css 304 1.390 ms - -
+GET /css/main.css 304 1.429 ms - -
+GET /js/jquery-1.11.2.min.js 304 1.511 ms - -
+GET /js/bootstrap.min.js 304 1.500 ms - -
+GET /js/owl.carousel.min.js 304 0.830 ms - -
+GET /js/contact.js 304 0.825 ms - -
+GET /js/jquery.flexslider.js 304 1.406 ms - -
+GET /js/script.js 304 0.434 ms - -
+GET /fonts/ionicons.ttf?v=2.0.0 404 2.278 ms - 3151
+GET /fonts/ionicons.woff?v=2.0.0 404 3.441 ms - 3151
+GET /signup 200 2.579 ms - 2828
+GET /css/ionicons.min.css 304 1.603 ms - -
+GET /css/owl.carousel.css 304 1.640 ms - -
+GET /css/owl.theme.css 304 1.650 ms - -
+GET /css/flexslider.css 304 1.621 ms - -
+GET /css/main.css 304 1.412 ms - -
+GET /fonts/ionicons.ttf?v=2.0.0 404 2.114 ms - 3151
+GET /fonts/ionicons.woff?v=2.0.0 404 3.692 ms - 3151
+GET /login 200 5.099 ms - 2825
+GET /css/ionicons.min.css 304 0.604 ms - -
+GET /css/owl.carousel.css 304 2.450 ms - -
+GET /css/owl.theme.css 304 4.283 ms - -
+GET /css/flexslider.css 304 5.171 ms - -
+GET /css/main.css 304 5.320 ms - -
+GET /fonts/ionicons.ttf?v=2.0.0 404 2.727 ms - 3151
+GET /fonts/ionicons.woff?v=2.0.0 404 2.628 ms - 3151
+GET /login 304 2.391 ms - -
+GET /css/ionicons.min.css 304 1.257 ms - -
+GET /css/owl.carousel.css 304 1.245 ms - -
+GET /css/owl.theme.css 304 1.603 ms - -
+GET /css/flexslider.css 304 1.722 ms - -
+GET /css/main.css 304 1.767 ms - -
+GET /fonts/ionicons.ttf?v=2.0.0 404 1.614 ms - 3151
+GET /fonts/ionicons.woff?v=2.0.0 404 3.014 ms - 3151
+GET /signup 200 6.182 ms - 2693
+GET /css/ionicons.min.css 304 0.753 ms - -
+GET /css/owl.carousel.css 304 0.828 ms - -
+GET /css/owl.theme.css 304 0.904 ms - -
+GET /css/flexslider.css 304 1.000 ms - -
+GET /css/main.css 304 1.060 ms - -
+GET /fonts/ionicons.ttf?v=2.0.0 404 2.243 ms - 3151
+GET /fonts/ionicons.woff?v=2.0.0 404 2.405 ms - 3151
+GET /login 304 2.826 ms - -
+GET /css/ionicons.min.css 304 1.245 ms - -
+GET /css/owl.carousel.css 304 1.252 ms - -
+GET /css/owl.theme.css 304 1.235 ms - -
+GET /css/flexslider.css 304 1.168 ms - -
+GET /css/main.css 304 1.128 ms - -
+GET /fonts/ionicons.ttf?v=2.0.0 404 2.728 ms - 3151
+GET /fonts/ionicons.woff?v=2.0.0 404 3.146 ms - 3151
+GET /login 200 2.896 ms - 2690
+GET /css/ionicons.min.css 304 1.226 ms - -
+GET /css/owl.carousel.css 304 1.245 ms - -
+GET /css/owl.theme.css 304 1.213 ms - -
+GET /css/flexslider.css 304 1.158 ms - -
+GET /css/main.css 304 1.118 ms - -
+GET /fonts/ionicons.ttf?v=2.0.0 404 2.086 ms - 3151
+GET /fonts/ionicons.woff?v=2.0.0 404 5.486 ms - 3151
+GET /login 200 3.886 ms - 2679
+GET /css/ionicons.min.css 304 0.551 ms - -
+GET /css/owl.carousel.css 304 0.527 ms - -
+GET /css/owl.theme.css 304 1.745 ms - -
+GET /css/flexslider.css 304 1.615 ms - -
+GET /css/main.css 304 3.527 ms - -
+GET /fonts/ionicons.ttf?v=2.0.0 404 2.136 ms - 3151
+GET /fonts/ionicons.woff?v=2.0.0 404 2.819 ms - 3151
+GET /home 404 3.358 ms - 3151
+GET /css/ionicons.min.css 304 2.309 ms - -
+GET /css/owl.carousel.css 304 2.267 ms - -
+GET /css/owl.theme.css 304 2.376 ms - -
+GET /css/flexslider.css 304 1.391 ms - -
+GET /css/main.css 304 1.296 ms - -
+GET /home 404 3.314 ms - 3151
+GET /css/ionicons.min.css 304 1.546 ms - -
+GET /css/owl.carousel.css 304 1.666 ms - -
+GET /css/owl.theme.css 304 1.585 ms - -
+GET /css/flexslider.css 304 1.558 ms - -
+GET /css/main.css 304 1.534 ms - -
+GET / 200 4.084 ms - 7556
+GET /css/ionicons.min.css 304 0.320 ms - -
+GET /css/owl.carousel.css 304 2.041 ms - -
+GET /css/owl.theme.css 304 1.815 ms - -
+GET /css/flexslider.css 304 1.659 ms - -
+GET /css/main.css 304 1.703 ms - -
+GET /js/jquery-1.11.2.min.js 304 1.638 ms - -
+GET /js/bootstrap.min.js 304 1.573 ms - -
+GET /js/owl.carousel.min.js 304 1.517 ms - -
+GET /js/contact.js 304 1.431 ms - -
+GET /js/jquery.flexslider.js 304 1.134 ms - -
+GET /js/script.js 304 0.989 ms - -
+GET /fonts/ionicons.ttf?v=2.0.0 404 1.975 ms - 3151
+GET /assets/images/background-image.jpeg 404 3.367 ms - 3151
+GET /fonts/ionicons.woff?v=2.0.0 404 2.697 ms - 3151
+GET /css/fonts/flexslider-icon.woff 200 1.807 ms - 1268
+GET / 200 5.125 ms - 7559
+GET /css/ionicons.min.css 304 1.442 ms - -
+GET /css/owl.carousel.css 304 1.399 ms - -
+GET /css/owl.theme.css 304 1.380 ms - -
+GET /css/flexslider.css 304 1.501 ms - -
+GET /css/main.css 304 1.531 ms - -
+GET /js/jquery-1.11.2.min.js 304 1.582 ms - -
+GET /js/bootstrap.min.js 304 3.230 ms - -
+GET /js/owl.carousel.min.js 304 1.425 ms - -
+GET /js/contact.js 304 1.521 ms - -
+GET /js/jquery.flexslider.js 304 1.737 ms - -
+GET /js/script.js 304 1.748 ms - -
+GET /assets/images/background-image.jpeg 404 5.547 ms - 3164
+GET /fonts/ionicons.ttf?v=2.0.0 404 8.591 ms - 3164
+GET /fonts/ionicons.woff?v=2.0.0 404 5.981 ms - 3164
+GET /css/fonts/flexslider-icon.woff 304 0.489 ms - -
+GET / 200 2.085 ms - 7568
+GET /css/ionicons.min.css 304 2.326 ms - -
+GET /css/owl.carousel.css 304 2.455 ms - -
+GET /css/owl.theme.css 304 2.045 ms - -
+GET /css/flexslider.css 304 2.344 ms - -
+GET /css/main.css 304 2.499 ms - -
+GET /js/jquery-1.11.2.min.js 304 2.718 ms - -
+GET /js/bootstrap.min.js 304 0.280 ms - -
+GET /js/owl.carousel.min.js 304 0.838 ms - -
+GET /js/contact.js 304 0.938 ms - -
+GET /js/jquery.flexslider.js 304 1.047 ms - -
+GET /js/script.js 304 0.268 ms - -
+GET /assets/images/background-image.jpeg 404 2.282 ms - 3164
+GET /fonts/ionicons.ttf?v=2.0.0 404 4.707 ms - 3164
+GET /fonts/ionicons.woff?v=2.0.0 404 3.624 ms - 3164
+GET /css/fonts/flexslider-icon.woff 304 0.224 ms - -
+GET / 200 2.873 ms - 7554
+GET /css/ionicons.min.css 304 1.869 ms - -
+GET /css/owl.carousel.css 304 1.841 ms - -
+GET /css/owl.theme.css 304 2.100 ms - -
+GET /css/flexslider.css 304 2.152 ms - -
+GET /css/main.css 304 3.828 ms - -
+GET /js/jquery-1.11.2.min.js 304 3.963 ms - -
+GET /js/bootstrap.min.js 304 3.006 ms - -
+GET /js/owl.carousel.min.js 304 2.498 ms - -
+GET /js/contact.js 304 2.122 ms - -
+GET /js/jquery.flexslider.js 304 2.057 ms - -
+GET /js/script.js 304 1.819 ms - -
+GET /assets/images/background-image.jpeg 404 3.405 ms - 3164
+GET /fonts/ionicons.ttf?v=2.0.0 404 5.057 ms - 3164
+GET /fonts/ionicons.woff?v=2.0.0 404 2.404 ms - 3164
+GET /css/fonts/flexslider-icon.woff 304 0.334 ms - -
+GET /login 200 3.707 ms - 2691
+GET /css/ionicons.min.css 304 0.991 ms - -
+GET /css/owl.carousel.css 304 0.990 ms - -
+GET /css/owl.theme.css 304 3.749 ms - -
+GET /css/flexslider.css 304 3.867 ms - -
+GET /css/main.css 304 1.707 ms - -
+GET /fonts/ionicons.ttf?v=2.0.0 404 1.809 ms - 3164
+GET /fonts/ionicons.woff?v=2.0.0 404 2.634 ms - 3164
+GET /css/fonts/flexslider-icon.woff 304 1.896 ms - -
+GET / 200 2.473 ms - 7279
+GET /css/ionicons.min.css 304 1.916 ms - -
+GET /css/owl.carousel.css 304 2.004 ms - -
+GET /css/owl.theme.css 304 2.012 ms - -
+GET /css/flexslider.css 304 1.542 ms - -
+GET /css/main.css 304 1.313 ms - -
+GET /js/jquery-1.11.2.min.js 304 1.294 ms - -
+GET /js/bootstrap.min.js 304 7.241 ms - -
+GET /js/owl.carousel.min.js 304 7.641 ms - -
+GET /js/contact.js 304 7.652 ms - -
+GET /js/jquery.flexslider.js 304 2.096 ms - -
+GET /js/script.js 304 2.124 ms - -
+GET /fonts/ionicons.ttf?v=2.0.0 404 2.817 ms - 3164
+GET /assets/images/background-image.jpeg 404 4.255 ms - 3164
+GET /fonts/ionicons.woff?v=2.0.0 404 3.618 ms - 3164
+GET /css/fonts/flexslider-icon.woff 304 0.291 ms - -
+GET /login 304 2.616 ms - -
+GET /css/ionicons.min.css 304 1.491 ms - -
+GET /css/owl.carousel.css 304 1.238 ms - -
+GET /css/owl.theme.css 304 1.179 ms - -
+GET /css/flexslider.css 304 3.113 ms - -
+GET /css/main.css 304 3.350 ms - -
+GET /fonts/ionicons.ttf?v=2.0.0 404 1.606 ms - 3164
+GET /fonts/ionicons.woff?v=2.0.0 404 5.261 ms - 3164
+GET /css/fonts/flexslider-icon.woff 304 0.293 ms - -
+GET / 200 5.200 ms - 7272
+GET /css/ionicons.min.css 304 1.390 ms - -
+GET /css/owl.carousel.css 304 1.321 ms - -
+GET /css/owl.theme.css 304 1.366 ms - -
+GET /css/flexslider.css 304 2.163 ms - -
+GET /css/main.css 304 2.833 ms - -
+GET /js/jquery-1.11.2.min.js 304 0.276 ms - -
+GET /js/bootstrap.min.js 304 1.064 ms - -
+GET /js/owl.carousel.min.js 304 1.025 ms - -
+GET /js/contact.js 304 0.992 ms - -
+GET /js/jquery.flexslider.js 304 0.901 ms - -
+GET /js/script.js 304 0.248 ms - -
+GET /fonts/ionicons.ttf?v=2.0.0 404 2.212 ms - 3164
+GET /images/background-image.jpeg 200 3.135 ms - 506649
+GET /fonts/ionicons.woff?v=2.0.0 404 2.681 ms - 3164
+GET /css/fonts/flexslider-icon.woff 304 0.334 ms - -
+GET / 200 10.986 ms - 7125
+GET /css/ionicons.min.css 304 3.729 ms - -
+GET /css/owl.carousel.css 304 7.854 ms - -
+GET /css/owl.theme.css 304 6.777 ms - -
+GET /css/flexslider.css 304 10.249 ms - -
+GET /css/main.css 304 10.345 ms - -
+GET /js/jquery-1.11.2.min.js 304 10.368 ms - -
+GET /js/bootstrap.min.js 304 2.427 ms - -
+GET /js/contact.js 304 2.242 ms - -
+GET /js/owl.carousel.min.js 304 3.136 ms - -
+GET /js/jquery.flexslider.js 304 0.650 ms - -
+GET /js/script.js 304 1.323 ms - -
+GET /images/background-image.jpeg 304 0.338 ms - -
+GET /fonts/ionicons.ttf?v=2.0.0 404 2.692 ms - 3164
+GET /fonts/ionicons.woff?v=2.0.0 404 3.094 ms - 3164
+GET /css/fonts/flexslider-icon.woff 304 1.028 ms - -
+GET / 200 3.921 ms - 6936
+GET /css/ionicons.min.css 304 4.280 ms - -
+GET /css/owl.carousel.css 304 4.367 ms - -
+GET /css/owl.theme.css 304 4.372 ms - -
+GET /css/flexslider.css 304 0.876 ms - -
+GET /css/main.css 304 0.791 ms - -
+GET /js/jquery-1.11.2.min.js 304 0.812 ms - -
+GET /js/bootstrap.min.js 304 0.801 ms - -
+GET /js/owl.carousel.min.js 304 0.904 ms - -
+GET /js/contact.js 304 0.877 ms - -
+GET /js/jquery.flexslider.js 304 0.912 ms - -
+GET /js/script.js 304 0.914 ms - -
+GET /images/background-image.jpeg 304 0.470 ms - -
+GET /fonts/ionicons.ttf?v=2.0.0 404 2.590 ms - 3164
+GET /fonts/ionicons.woff?v=2.0.0 404 8.730 ms - 3164
+GET /css/fonts/flexslider-icon.woff 304 0.276 ms - -
+GET /signup 200 3.566 ms - 2705
+GET /css/ionicons.min.css 304 1.704 ms - -
+GET /css/owl.carousel.css 304 1.303 ms - -
+GET /css/owl.theme.css 304 1.372 ms - -
+GET /css/flexslider.css 304 1.233 ms - -
+GET /css/main.css 304 1.232 ms - -
+GET /signup 304 2.369 ms - -
+GET /css/ionicons.min.css 304 2.066 ms - -
+GET /css/owl.carousel.css 304 2.228 ms - -
+GET /css/owl.theme.css 304 2.433 ms - -
+GET /css/flexslider.css 304 2.255 ms - -
+GET /css/main.css 304 2.229 ms - -
+GET /login 304 3.697 ms - -
+GET /css/ionicons.min.css 304 2.369 ms - -
+GET /css/owl.carousel.css 304 2.320 ms - -
+GET /css/owl.theme.css 304 2.323 ms - -
+GET /css/flexslider.css 304 2.215 ms - -
+GET /css/main.css 304 1.294 ms - -
+GET /signup 304 4.066 ms - -
+GET /css/ionicons.min.css 304 1.213 ms - -
+GET /css/owl.carousel.css 304 1.172 ms - -
+GET /css/owl.theme.css 304 1.122 ms - -
+GET /css/flexslider.css 304 1.113 ms - -
+GET /css/main.css 304 3.633 ms - -
+GET /signup 200 2.045 ms - 9151
+GET /css/ionicons.min.css 304 0.295 ms - -
+GET /css/owl.carousel.css 304 0.866 ms - -
+GET /css/owl.theme.css 304 0.889 ms - -
+GET /css/flexslider.css 304 0.930 ms - -
+GET /css/main.css 304 0.932 ms - -
+GET /fonts/ionicons.ttf?v=2.0.0 404 2.815 ms - 3146
+GET /fonts/ionicons.woff?v=2.0.0 404 3.699 ms - 3146
+GET /signup 200 2.361 ms - 9267
+GET /css/ionicons.min.css 304 3.639 ms - -
+GET /css/owl.carousel.css 304 6.102 ms - -
+GET /css/owl.theme.css 304 4.709 ms - -
+GET /css/flexslider.css 304 4.706 ms - -
+GET /css/main.css 304 3.256 ms - -
+GET /assets/css/section.css 404 13.874 ms - 3262
+GET /assets/css/contact.css 404 14.980 ms - 3262
+GET /fonts/ionicons.ttf?v=2.0.0 404 7.436 ms - 3262
+GET /fonts/ionicons.woff?v=2.0.0 404 3.907 ms - 3262
+GET /signup 200 10.112 ms - 9253
+GET /css/section.css 200 3.592 ms - 822
+GET /css/ionicons.min.css 304 2.289 ms - -
+GET /css/owl.carousel.css 304 2.848 ms - -
+GET /css/owl.theme.css 304 1.902 ms - -
+GET /css/flexslider.css 304 1.893 ms - -
+GET /css/contact.css 200 5.578 ms - 1150
+GET /css/main.css 304 0.657 ms - -
+GET /fonts/ionicons.ttf?v=2.0.0 404 12.175 ms - 3248
+GET /images/section-header.jpeg 404 14.361 ms - 3248
+GET /fonts/ionicons.woff?v=2.0.0 404 3.489 ms - 3248
+GET /signup 304 3.957 ms - -
+GET /css/ionicons.min.css 304 1.120 ms - -
+GET /css/owl.carousel.css 304 1.112 ms - -
+GET /css/owl.theme.css 304 4.422 ms - -
+GET /css/flexslider.css 304 0.840 ms - -
+GET /css/main.css 304 0.885 ms - -
+GET /css/section.css 304 0.921 ms - -
+GET /css/contact.css 304 0.935 ms - -
+GET /fonts/ionicons.ttf?v=2.0.0 404 4.370 ms - 3248
+GET /images/section-header.jpeg 200 0.862 ms - 336845
+GET /fonts/ionicons.woff?v=2.0.0 404 3.345 ms - 3248
+GET /signup 200 3.858 ms - 9781
+GET /css/ionicons.min.css 304 2.049 ms - -
+GET /css/owl.carousel.css 304 1.985 ms - -
+GET /css/owl.theme.css 304 1.761 ms - -
+GET /css/flexslider.css 304 1.285 ms - -
+GET /css/main.css 304 1.184 ms - -
+GET /css/section.css 304 1.168 ms - -
+GET /css/contact.css 304 0.300 ms - -
+GET /fonts/ionicons.ttf?v=2.0.0 404 6.615 ms - 3248
+GET /images/section-header.jpeg 304 2.195 ms - -
+GET /fonts/ionicons.woff?v=2.0.0 404 7.476 ms - 3248
+GET /css/ionicons.min.css 304 2.211 ms - -
+GET /css/owl.carousel.css 304 2.171 ms - -
+GET /css/owl.theme.css 304 2.309 ms - -
+GET /css/flexslider.css 304 2.682 ms - -
+GET /css/main.css 304 2.808 ms - -
+GET /css/section.css 304 2.880 ms - -
+GET /css/contact.css 304 0.335 ms - -
+GET /signup 200 11.223 ms - 9787
+GET /css/ionicons.min.css 304 3.923 ms - -
+GET /css/owl.carousel.css 304 3.188 ms - -
+GET /css/owl.theme.css 304 3.228 ms - -
+GET /css/flexslider.css 304 3.237 ms - -
+GET /css/main.css 304 0.800 ms - -
+GET /css/section.css 304 1.092 ms - -
+GET /css/contact.css 200 11.036 ms - 1175
+GET /fonts/ionicons.ttf?v=2.0.0 404 6.245 ms - 3248
+GET /images/section-header.jpeg 304 0.686 ms - -
+GET /fonts/ionicons.woff?v=2.0.0 404 3.919 ms - 3248
+GET /signup 200 13.728 ms - 9801
+GET /css/ionicons.min.css 304 1.143 ms - -
+GET /css/owl.carousel.css 304 1.096 ms - -
+GET /css/owl.theme.css 304 1.126 ms - -
+GET /css/flexslider.css 304 1.138 ms - -
+GET /css/main.css 304 1.169 ms - -
+GET /css/section.css 304 0.608 ms - -
+GET /css/contact.css 304 0.621 ms - -
+GET /fonts/ionicons.ttf?v=2.0.0 404 5.376 ms - 3248
+GET /images/section-header.jpeg 304 0.591 ms - -
+GET /fonts/ionicons.woff?v=2.0.0 404 4.878 ms - 3248
+POST /signup 302 94.924 ms - 60
+GET /profile 200 6.237 ms - 1464
+GET /css/ionicons.min.css 304 3.381 ms - -
+GET /css/owl.carousel.css 304 1.520 ms - -
+GET /css/owl.theme.css 304 1.346 ms - -
+GET /css/flexslider.css 304 1.319 ms - -
+GET /css/main.css 304 1.352 ms - -
+GET /css/section.css 304 1.669 ms - -
+GET /css/contact.css 304 2.784 ms - -
+GET /signup 200 2.747 ms - 9801
+GET /fonts/ionicons.ttf?v=2.0.0 404 4.571 ms - 3248
+GET /fonts/ionicons.woff?v=2.0.0 404 3.191 ms - 3248
+GET /signup 200 12.467 ms - 9787
+GET /css/ionicons.min.css 304 0.352 ms - -
+GET /css/owl.carousel.css 304 0.374 ms - -
+GET /css/owl.theme.css 304 0.616 ms - -
+GET /css/flexslider.css 304 0.310 ms - -
+GET /css/main.css 304 1.407 ms - -
+GET /css/section.css 304 1.536 ms - -
+GET /css/contact.css 304 1.314 ms - -
+GET /fonts/ionicons.ttf?v=2.0.0 404 4.665 ms - 3248
+GET /images/section-header.jpeg 304 0.305 ms - -
+GET /fonts/ionicons.woff?v=2.0.0 404 3.828 ms - 3248
+GET /signup 200 7.746 ms - 9860
+GET /css/ionicons.min.css 304 1.679 ms - -
+GET /css/owl.carousel.css 304 1.578 ms - -
+GET /css/owl.theme.css 304 1.441 ms - -
+GET /css/flexslider.css 304 1.420 ms - -
+GET /css/main.css 304 1.271 ms - -
+GET /css/section.css 304 1.435 ms - -
+GET /css/contact.css 200 1.876 ms - 1180
+GET /fonts/ionicons.ttf?v=2.0.0 404 4.853 ms - 3248
+GET /images/section-header.jpeg 304 0.305 ms - -
+GET /fonts/ionicons.woff?v=2.0.0 404 2.608 ms - 3248
+GET /signup 200 4.505 ms - 9846
+GET /css/ionicons.min.css 304 2.090 ms - -
+GET /css/owl.carousel.css 304 2.129 ms - -
+GET /css/owl.theme.css 304 1.876 ms - -
+GET /css/flexslider.css 304 1.883 ms - -
+GET /css/main.css 304 1.888 ms - -
+GET /css/section.css 304 1.937 ms - -
+GET /css/contact.css 304 0.345 ms - -
+GET /fonts/ionicons.ttf?v=2.0.0 404 2.540 ms - 3248
+GET /images/section-header.jpeg 304 0.331 ms - -
+GET /fonts/ionicons.woff?v=2.0.0 404 4.393 ms - 3248
+GET /signup 200 3.064 ms - 10059
+GET /css/ionicons.min.css 304 2.217 ms - -
+GET /css/owl.carousel.css 304 1.972 ms - -
+GET /css/owl.theme.css 304 1.745 ms - -
+GET /css/flexslider.css 304 1.683 ms - -
+GET /css/main.css 304 1.742 ms - -
+GET /css/section.css 304 1.724 ms - -
+GET /css/contact.css 304 0.380 ms - -
+GET /fonts/ionicons.ttf?v=2.0.0 404 2.414 ms - 3248
+GET /images/section-header.jpeg 304 0.462 ms - -
+GET /fonts/ionicons.woff?v=2.0.0 404 3.520 ms - 3248
+GET /signup 200 12.969 ms - 10228
+GET /css/ionicons.min.css 304 1.414 ms - -
+GET /css/owl.carousel.css 304 1.538 ms - -
+GET /css/owl.theme.css 304 4.351 ms - -
+GET /css/flexslider.css 304 4.324 ms - -
+GET /css/main.css 304 0.919 ms - -
+GET /css/section.css 304 0.860 ms - -
+GET /css/contact.css 304 0.782 ms - -
+GET /fonts/ionicons.ttf?v=2.0.0 404 2.167 ms - 3248
+GET /images/section-header.jpeg 304 0.293 ms - -
+GET /fonts/ionicons.woff?v=2.0.0 404 4.126 ms - 3248
+GET /signup 200 2.790 ms - 10395
+GET /css/ionicons.min.css 304 1.730 ms - -
+GET /css/owl.carousel.css 304 1.705 ms - -
+GET /css/owl.theme.css 304 1.680 ms - -
+GET /css/flexslider.css 304 1.643 ms - -
+GET /css/main.css 304 2.715 ms - -
+GET /css/section.css 304 2.720 ms - -
+GET /css/contact.css 304 0.625 ms - -
+GET /fonts/ionicons.ttf?v=2.0.0 404 2.518 ms - 3248
+GET /images/section-header.jpeg 304 0.309 ms - -
+GET /fonts/ionicons.woff?v=2.0.0 404 2.848 ms - 3248
+GET /signup 200 6.966 ms - 8400
+GET /css/ionicons.min.css 304 4.063 ms - -
+GET /css/owl.carousel.css 304 4.027 ms - -
+GET /css/owl.theme.css 304 4.058 ms - -
+GET /css/flexslider.css 304 4.105 ms - -
+GET /css/main.css 304 4.094 ms - -
+GET /css/section.css 304 4.104 ms - -
+GET /css/contact.css 304 0.369 ms - -
+GET /fonts/ionicons.ttf?v=2.0.0 404 5.041 ms - 3248
+GET /images/section-header.jpeg 304 1.379 ms - -
+GET /fonts/ionicons.woff?v=2.0.0 404 2.698 ms - 3248
+GET /signup 200 9.106 ms - 8073
+GET /css/ionicons.min.css 304 4.974 ms - -
+GET /css/owl.carousel.css 304 3.758 ms - -
+GET /css/owl.theme.css 304 3.691 ms - -
+GET /css/flexslider.css 304 3.707 ms - -
+GET /css/main.css 304 3.699 ms - -
+GET /css/section.css 304 3.736 ms - -
+GET /css/contact.css 304 0.350 ms - -
+GET /images/section-header.jpeg 304 1.034 ms - -
+GET /fonts/ionicons.ttf?v=2.0.0 404 5.100 ms - 3248
+GET /fonts/ionicons.woff?v=2.0.0 404 4.559 ms - 3248
+POST /signup 302 4.314 ms - 58
+GET /signup 200 2.121 ms - 8129
+GET /css/ionicons.min.css 304 0.329 ms - -
+GET /css/owl.carousel.css 304 0.299 ms - -
+GET /css/owl.theme.css 304 19.285 ms - -
+GET /css/flexslider.css 304 19.355 ms - -
+GET /css/main.css 304 19.769 ms - -
+GET /css/section.css 304 18.672 ms - -
+GET /css/contact.css 304 2.332 ms - -
+GET /fonts/ionicons.ttf?v=2.0.0 404 2.408 ms - 3248
+GET /fonts/ionicons.woff?v=2.0.0 404 4.229 ms - 3248
+GET /images/section-header.jpeg 304 0.403 ms - -
+POST /signup 302 58.675 ms - 60
+GET /profile 200 2.898 ms - 1426
+GET /css/ionicons.min.css 304 0.356 ms - -
+GET /css/owl.carousel.css 304 4.288 ms - -
+GET /css/owl.theme.css 304 4.349 ms - -
+GET /css/flexslider.css 304 4.351 ms - -
+GET /css/main.css 304 1.947 ms - -
+GET /css/section.css 304 1.698 ms - -
+GET /css/contact.css 304 0.839 ms - -
+GET /signup 200 2.410 ms - 8073
+GET /fonts/ionicons.ttf?v=2.0.0 404 2.143 ms - 3248
+GET /fonts/ionicons.woff?v=2.0.0 404 3.273 ms - 3248
+GET /signup 200 8.152 ms - 8102
+GET /css/ionicons.min.css 304 1.941 ms - -
+GET /css/owl.carousel.css 304 1.674 ms - -
+GET /css/owl.theme.css 304 1.676 ms - -
+GET /css/flexslider.css 304 1.631 ms - -
+GET /css/main.css 304 1.628 ms - -
+GET /css/section.css 304 1.697 ms - -
+GET /css/contact.css 304 0.392 ms - -
+GET /fonts/ionicons.ttf?v=2.0.0 404 3.300 ms - 3248
+GET /images/section-header.jpeg 304 0.839 ms - -
+GET /fonts/ionicons.woff?v=2.0.0 404 3.394 ms - 3248
+GET /signup 200 5.325 ms - 8054
+GET /css/ionicons.min.css 304 1.439 ms - -
+GET /css/owl.carousel.css 304 1.354 ms - -
+GET /css/owl.theme.css 304 1.310 ms - -
+GET /css/flexslider.css 304 1.298 ms - -
+GET /css/main.css 304 1.292 ms - -
+GET /css/section.css 304 1.340 ms - -
+GET /css/contact.css 304 1.228 ms - -
+GET /images/section-header.jpeg 304 0.293 ms - -
+GET /fonts/ionicons.ttf?v=2.0.0 404 5.329 ms - 3248
+GET /fonts/ionicons.woff?v=2.0.0 404 2.806 ms - 3248
+POST /signup 302 61.547 ms - 60
+GET /profile 200 3.671 ms - 1428
+GET /css/ionicons.min.css 304 0.457 ms - -
+GET /css/owl.carousel.css 304 4.407 ms - -
+GET /css/owl.theme.css 304 4.354 ms - -
+GET /css/flexslider.css 304 4.201 ms - -
+GET /css/main.css 304 1.837 ms - -
+GET /css/section.css 304 1.411 ms - -
+GET /css/contact.css 304 1.309 ms - -
+GET /signup 200 3.971 ms - 8054
+GET /fonts/ionicons.ttf?v=2.0.0 404 1.782 ms - 3248
+GET /fonts/ionicons.woff?v=2.0.0 404 3.227 ms - 3248
+GET /signup 200 2.112 ms - 8134
+GET /css/ionicons.min.css 304 1.891 ms - -
+GET /css/owl.carousel.css 304 1.901 ms - -
+GET /css/owl.theme.css 304 1.975 ms - -
+GET /css/flexslider.css 304 1.960 ms - -
+GET /css/main.css 304 1.615 ms - -
+GET /css/section.css 304 3.107 ms - -
+GET /css/contact.css 304 2.311 ms - -
+GET /fonts/ionicons.ttf?v=2.0.0 404 2.373 ms - 3248
+GET /images/section-header.jpeg 304 0.908 ms - -
+GET /fonts/ionicons.woff?v=2.0.0 404 3.139 ms - 3248
+GET /signup 200 3.476 ms - 8064
+GET /css/ionicons.min.css 304 3.348 ms - -
+GET /css/owl.carousel.css 304 3.769 ms - -
+GET /css/owl.theme.css 304 3.697 ms - -
+GET /css/flexslider.css 304 2.377 ms - -
+GET /css/main.css 304 3.361 ms - -
+GET /css/section.css 304 5.697 ms - -
+GET /css/contact.css 304 3.363 ms - -
+GET /fonts/ionicons.ttf?v=2.0.0 404 3.157 ms - 3248
+GET /images/section-header.jpeg 304 0.491 ms - -
+GET /fonts/ionicons.woff?v=2.0.0 404 6.789 ms - 3248
+POST /signup 302 58.169 ms - 60
+GET /profile 200 2.288 ms - 1432
+GET /css/ionicons.min.css 304 0.545 ms - -
+GET /css/owl.carousel.css 304 0.559 ms - -
+GET /css/owl.theme.css 304 1.305 ms - -
+GET /css/flexslider.css 304 1.322 ms - -
+GET /css/main.css 304 1.208 ms - -
+GET /css/section.css 304 4.387 ms - -
+GET /css/contact.css 304 1.919 ms - -
+GET /signup 200 2.074 ms - 8064
+GET /fonts/ionicons.ttf?v=2.0.0 404 2.907 ms - 3248
+GET /fonts/ionicons.woff?v=2.0.0 404 3.238 ms - 3248
+GET /signup 200 5.125 ms - 8392
+GET /css/ionicons.min.css 304 1.730 ms - -
+GET /css/owl.carousel.css 304 1.743 ms - -
+GET /css/owl.theme.css 304 1.729 ms - -
+GET /css/flexslider.css 304 2.548 ms - -
+GET /css/main.css 304 2.885 ms - -
+GET /css/section.css 304 2.959 ms - -
+GET /css/contact.css 304 0.316 ms - -
+GET /images/section-header.jpeg 304 0.645 ms - -
+GET /fonts/ionicons.ttf?v=2.0.0 404 3.019 ms - 3248
+GET /fonts/ionicons.woff?v=2.0.0 404 3.332 ms - 3248
+POST /signup 302 62.042 ms - 60
+GET /profile 200 2.575 ms - 1444
+GET /css/ionicons.min.css 304 2.113 ms - -
+GET /css/owl.carousel.css 304 2.163 ms - -
+GET /css/owl.theme.css 304 2.193 ms - -
+GET /css/flexslider.css 304 2.271 ms - -
+GET /css/main.css 304 2.294 ms - -
+GET /css/section.css 304 2.288 ms - -
+GET /css/contact.css 304 0.351 ms - -
+GET /signup 200 4.157 ms - 8392
+GET /fonts/ionicons.ttf?v=2.0.0 404 2.004 ms - 3248
+GET /fonts/ionicons.woff?v=2.0.0 404 4.081 ms - 3248
+GET /signup 200 3.648 ms - 3534
+GET /css/ionicons.min.css 304 1.353 ms - -
+GET /css/owl.carousel.css 304 1.474 ms - -
+GET /css/owl.theme.css 304 1.522 ms - -
+GET /css/flexslider.css 304 3.312 ms - -
+GET /css/main.css 304 3.318 ms - -
+GET /css/section.css 304 3.328 ms - -
+GET /css/contact.css 304 1.066 ms - -
+GET /images/section-header.jpeg 304 0.446 ms - -
+GET /signup 200 4.317 ms - 3729
+GET /css/ionicons.min.css 304 2.763 ms - -
+GET /css/owl.carousel.css 304 2.870 ms - -
+GET /css/owl.theme.css 304 2.007 ms - -
+GET /css/flexslider.css 304 1.981 ms - -
+GET /css/main.css 304 1.966 ms - -
+GET /css/section.css 304 1.961 ms - -
+GET /css/contact.css 304 1.218 ms - -
+GET /images/section-header.jpeg 304 0.588 ms - -
+GET /signup 304 2.864 ms - -
+GET /css/ionicons.min.css 304 1.474 ms - -
+GET /css/owl.carousel.css 304 1.434 ms - -
+GET /css/owl.theme.css 304 1.385 ms - -
+GET /css/flexslider.css 304 1.391 ms - -
+GET /css/main.css 304 1.352 ms - -
+GET /css/section.css 304 1.353 ms - -
+GET /css/contact.css 304 0.409 ms - -
+GET /images/section-header.jpeg 304 0.475 ms - -
+GET /login 200 13.102 ms - 2775
+GET /css/ionicons.min.css 304 1.200 ms - -
+GET /css/owl.carousel.css 304 1.218 ms - -
+GET /css/owl.theme.css 304 1.334 ms - -
+GET /css/flexslider.css 304 1.381 ms - -
+GET /css/main.css 304 1.437 ms - -
+GET /css/section.css 304 2.499 ms - -
+GET /css/contact.css 304 0.341 ms - -
+POST /login 302 2.792 ms - 56
+GET /login 200 2.355 ms - 2789
+GET /css/ionicons.min.css 304 1.786 ms - -
+GET /css/owl.carousel.css 304 1.767 ms - -
+GET /css/owl.theme.css 304 2.988 ms - -
+GET /css/flexslider.css 304 10.257 ms - -
+GET /css/main.css 304 10.366 ms - -
+GET /css/section.css 304 10.347 ms - -
+GET /css/contact.css 304 0.285 ms - -
+GET /signup 304 2.136 ms - -
+GET /css/ionicons.min.css 304 1.760 ms - -
+GET /css/owl.carousel.css 304 1.643 ms - -
+GET /css/owl.theme.css 304 1.620 ms - -
+GET /css/flexslider.css 304 1.598 ms - -
+GET /css/main.css 304 1.357 ms - -
+GET /css/section.css 304 1.328 ms - -
+GET /css/contact.css 304 0.339 ms - -
+GET /images/section-header.jpeg 304 0.299 ms - -
+POST /signup 302 62.086 ms - 60
+GET /profile 200 4.839 ms - 2599
+GET /css/ionicons.min.css 304 1.721 ms - -
+GET /css/owl.carousel.css 304 3.123 ms - -
+GET /css/owl.theme.css 304 3.151 ms - -
+GET /css/flexslider.css 304 3.091 ms - -
+GET /css/main.css 304 3.071 ms - -
+GET /css/section.css 304 3.079 ms - -
+GET /css/contact.css 304 0.322 ms - -
+GET /profile 200 3.764 ms - 3184
+GET /css/ionicons.min.css 304 2.519 ms - -
+GET /css/owl.carousel.css 304 2.505 ms - -
+GET /css/owl.theme.css 304 2.458 ms - -
+GET /css/flexslider.css 304 2.449 ms - -
+GET /css/main.css 304 2.444 ms - -
+GET /css/section.css 304 2.439 ms - -
+GET /css/contact.css 304 0.369 ms - -
+GET /js/jquery-1.11.2.min.js 304 0.350 ms - -
+GET /js/bootstrap.min.js 304 0.875 ms - -
+GET /js/owl.carousel.min.js 304 0.511 ms - -
+GET /js/contact.js 304 0.552 ms - -
+GET /js/jquery.flexslider.js 304 0.500 ms - -
+GET /js/script.js 304 0.675 ms - -
+GET /signup 200 3.817 ms - 4311
+GET /css/ionicons.min.css 304 1.473 ms - -
+GET /css/owl.carousel.css 304 1.189 ms - -
+GET /css/owl.theme.css 304 0.903 ms - -
+GET /css/flexslider.css 304 0.931 ms - -
+GET /css/main.css 304 0.753 ms - -
+GET /css/section.css 304 1.040 ms - -
+GET /css/contact.css 304 2.604 ms - -
+GET /js/jquery-1.11.2.min.js 304 2.608 ms - -
+GET /js/bootstrap.min.js 304 3.016 ms - -
+GET /js/owl.carousel.min.js 304 3.193 ms - -
+GET /js/contact.js 304 3.169 ms - -
+GET /js/jquery.flexslider.js 304 2.587 ms - -
+GET /js/script.js 304 0.885 ms - -
+GET /images/section-header.jpeg 304 0.252 ms - -
+GET /login 200 2.809 ms - 2775
+GET /css/ionicons.min.css 304 1.321 ms - -
+GET /css/owl.carousel.css 304 1.351 ms - -
+GET /css/owl.theme.css 304 4.203 ms - -
+GET /css/flexslider.css 304 4.303 ms - -
+GET /css/main.css 304 4.346 ms - -
+GET /css/section.css 304 4.370 ms - -
+GET /css/contact.css 304 0.458 ms - -
+GET /signup 304 1.902 ms - -
+GET /css/ionicons.min.css 304 0.665 ms - -
+GET /css/owl.carousel.css 304 3.256 ms - -
+GET /css/owl.theme.css 304 3.064 ms - -
+GET /css/flexslider.css 304 2.870 ms - -
+GET /css/main.css 304 2.745 ms - -
+GET /css/section.css 304 2.543 ms - -
+GET /css/contact.css 304 1.676 ms - -
+GET /js/jquery-1.11.2.min.js 304 0.564 ms - -
+GET /js/bootstrap.min.js 304 0.528 ms - -
+GET /js/owl.carousel.min.js 304 1.389 ms - -
+GET /js/contact.js 304 1.434 ms - -
+GET /js/jquery.flexslider.js 304 1.131 ms - -
+GET /js/script.js 304 0.955 ms - -
+GET /profile 304 4.716 ms - -
+GET /css/ionicons.min.css 304 0.327 ms - -
+GET /css/owl.carousel.css 304 1.440 ms - -
+GET /css/owl.theme.css 304 1.478 ms - -
+GET /css/flexslider.css 304 1.608 ms - -
+GET /css/main.css 304 1.553 ms - -
+GET /css/section.css 304 1.560 ms - -
+GET /css/contact.css 304 1.641 ms - -
+GET /js/jquery-1.11.2.min.js 304 2.071 ms - -
+GET /js/bootstrap.min.js 304 2.096 ms - -
+GET /js/owl.carousel.min.js 304 2.151 ms - -
+GET /js/contact.js 304 2.130 ms - -
+GET /js/jquery.flexslider.js 304 2.172 ms - -
+GET /js/script.js 304 2.171 ms - -
+GET /profile 200 3.782 ms - 3183
+GET /css/ionicons.min.css 304 1.895 ms - -
+GET /css/owl.carousel.css 304 1.925 ms - -
+GET /css/owl.theme.css 304 1.865 ms - -
+GET /css/flexslider.css 304 1.852 ms - -
+GET /css/main.css 304 1.488 ms - -
+GET /css/section.css 304 1.378 ms - -
+GET /css/contact.css 304 0.495 ms - -
+GET /js/jquery-1.11.2.min.js 304 0.298 ms - -
+GET /js/bootstrap.min.js 304 0.361 ms - -
+GET /js/owl.carousel.min.js 304 0.312 ms - -
+GET /js/contact.js 304 0.497 ms - -
+GET /js/jquery.flexslider.js 304 0.983 ms - -
+GET /js/script.js 304 0.331 ms - -
+GET /profile 200 2.967 ms - 3185
+GET /css/ionicons.min.css 304 0.289 ms - -
+GET /css/owl.carousel.css 304 0.676 ms - -
+GET /css/owl.theme.css 304 3.044 ms - -
+GET /css/flexslider.css 304 3.119 ms - -
+GET /css/main.css 304 5.009 ms - -
+GET /css/section.css 304 5.047 ms - -
+GET /css/contact.css 304 0.283 ms - -
+GET /js/jquery-1.11.2.min.js 304 0.343 ms - -
+GET /js/bootstrap.min.js 304 0.310 ms - -
+GET /js/owl.carousel.min.js 304 0.311 ms - -
+GET /js/contact.js 304 0.264 ms - -
+GET /js/jquery.flexslider.js 304 0.280 ms - -
+GET /js/script.js 304 0.345 ms - -
+GET /inbox 404 9.673 ms - 3248
+GET /css/ionicons.min.css 304 4.353 ms - -
+GET /css/owl.carousel.css 304 3.138 ms - -
+GET /css/owl.theme.css 304 3.025 ms - -
+GET /css/flexslider.css 304 2.849 ms - -
+GET /css/main.css 304 1.370 ms - -
+GET /css/section.css 304 1.293 ms - -
+GET /css/contact.css 304 0.311 ms - -
+GET /profile 304 6.132 ms - -
+GET /css/ionicons.min.css 304 1.305 ms - -
+GET /css/owl.carousel.css 304 1.198 ms - -
+GET /css/owl.theme.css 304 1.160 ms - -
+GET /css/flexslider.css 304 1.125 ms - -
+GET /css/main.css 304 1.112 ms - -
+GET /css/section.css 304 1.308 ms - -
+GET /css/contact.css 304 0.291 ms - -
+GET /js/jquery-1.11.2.min.js 304 0.292 ms - -
+GET /js/bootstrap.min.js 304 0.687 ms - -
+GET /js/owl.carousel.min.js 304 0.644 ms - -
+GET /js/contact.js 304 0.636 ms - -
+GET /js/jquery.flexslider.js 304 0.412 ms - -
+GET /js/script.js 304 0.265 ms - -
+GET /profile 304 2.169 ms - -
+GET /css/ionicons.min.css 304 0.310 ms - -
+GET /css/owl.carousel.css 304 1.551 ms - -
+GET /css/owl.theme.css 304 1.920 ms - -
+GET /css/flexslider.css 304 2.109 ms - -
+GET /css/main.css 304 1.761 ms - -
+GET /css/section.css 304 2.122 ms - -
+GET /css/contact.css 304 2.132 ms - -
+GET /js/jquery-1.11.2.min.js 304 1.635 ms - -
+GET /js/bootstrap.min.js 304 1.240 ms - -
+GET /js/owl.carousel.min.js 304 1.061 ms - -
+GET /js/contact.js 304 1.082 ms - -
+GET /js/jquery.flexslider.js 304 1.180 ms - -
+GET /js/script.js 304 0.257 ms - -
+GET /home 404 2.685 ms - 3248
+GET /css/ionicons.min.css 304 1.738 ms - -
+GET /css/owl.carousel.css 304 1.871 ms - -
+GET /css/owl.theme.css 304 2.403 ms - -
+GET /css/flexslider.css 304 2.446 ms - -
+GET /css/main.css 304 2.882 ms - -
+GET /css/section.css 304 3.065 ms - -
+GET /css/contact.css 304 0.289 ms - -
+GET /profile 200 4.257 ms - 4996
+GET /css/ionicons.min.css 304 1.354 ms - -
+GET /css/owl.carousel.css 304 1.192 ms - -
+GET /css/owl.theme.css 304 1.176 ms - -
+GET /css/flexslider.css 304 2.755 ms - -
+GET /css/main.css 304 3.305 ms - -
+GET /css/section.css 304 4.014 ms - -
+GET /css/contact.css 304 0.493 ms - -
+GET /js/jquery-1.11.2.min.js 304 0.568 ms - -
+GET /js/bootstrap.min.js 304 2.088 ms - -
+GET /js/owl.carousel.min.js 304 0.464 ms - -
+GET /js/contact.js 304 0.438 ms - -
+GET /js/jquery.flexslider.js 304 0.259 ms - -
+GET /js/script.js 304 0.690 ms - -
+GET /assets/images/profile.jpg 404 2.592 ms - 3248
+GET /images/section-header.jpeg 304 0.224 ms - -
+GET /profile 200 3.694 ms - 5102
+GET /css/ionicons.min.css 304 5.638 ms - -
+GET /css/owl.carousel.css 304 4.860 ms - -
+GET /css/owl.theme.css 304 4.783 ms - -
+GET /css/flexslider.css 304 2.023 ms - -
+GET /css/main.css 304 1.525 ms - -
+GET /css/section.css 304 2.225 ms - -
+GET /css/contact.css 304 1.090 ms - -
+GET /js/jquery-1.11.2.min.js 304 0.384 ms - -
+GET /js/bootstrap.min.js 304 0.322 ms - -
+GET /js/owl.carousel.min.js 304 0.273 ms - -
+GET /js/contact.js 304 0.280 ms - -
+GET /js/jquery.flexslider.js 304 0.296 ms - -
+GET /js/script.js 304 0.229 ms - -
+GET /assets/images/profile.jpg 404 2.141 ms - 3248
+GET /images/section-header.jpeg 304 0.246 ms - -
+GET /profile 200 3.881 ms - 5091
+GET /css/ionicons.min.css 304 0.642 ms - -
+GET /css/owl.carousel.css 304 2.977 ms - -
+GET /css/owl.theme.css 304 3.081 ms - -
+GET /css/flexslider.css 304 0.866 ms - -
+GET /css/main.css 304 0.919 ms - -
+GET /css/section.css 304 0.962 ms - -
+GET /css/contact.css 304 1.010 ms - -
+GET /js/jquery-1.11.2.min.js 304 0.328 ms - -
+GET /js/bootstrap.min.js 304 0.307 ms - -
+GET /js/owl.carousel.min.js 304 0.282 ms - -
+GET /js/contact.js 304 0.234 ms - -
+GET /js/jquery.flexslider.js 304 0.246 ms - -
+GET /js/script.js 304 0.393 ms - -
+GET /assets/images/profile.jpg 404 2.147 ms - 3248
+GET /images/section-header.jpeg 304 0.239 ms - -
+GET / 200 4.557 ms - 7019
+GET /css/ionicons.min.css 304 0.335 ms - -
+GET /css/owl.carousel.css 304 1.342 ms - -
+GET /css/owl.theme.css 304 1.302 ms - -
+GET /css/flexslider.css 304 1.242 ms - -
+GET /css/main.css 304 1.220 ms - -
+GET /css/section.css 304 1.484 ms - -
+GET /css/contact.css 304 1.533 ms - -
+GET /js/jquery-1.11.2.min.js 304 0.718 ms - -
+GET /js/bootstrap.min.js 304 2.014 ms - -
+GET /js/owl.carousel.min.js 304 0.925 ms - -
+GET /js/contact.js 304 0.947 ms - -
+GET /js/jquery.flexslider.js 304 0.978 ms - -
+GET /js/script.js 304 0.969 ms - -
+GET /images/background-image.jpeg 304 0.370 ms - -
+GET /fonts/ionicons.ttf?v=2.0.0 404 3.616 ms - 3248
+GET /fonts/ionicons.woff?v=2.0.0 404 2.693 ms - 3248
+GET /css/fonts/flexslider-icon.woff 304 0.311 ms - -
+GET /login 200 5.418 ms - 2774
+GET /css/ionicons.min.css 304 1.287 ms - -
+GET /css/owl.carousel.css 304 1.269 ms - -
+GET /css/owl.theme.css 304 1.348 ms - -
+GET /css/flexslider.css 304 1.377 ms - -
+GET /css/main.css 304 1.521 ms - -
+GET /css/section.css 304 1.819 ms - -
+GET /css/contact.css 304 0.286 ms - -
+POST /login 302 59.455 ms - 60
+GET /profile 304 6.962 ms - -
+GET /css/ionicons.min.css 304 0.320 ms - -
+GET /css/owl.carousel.css 304 1.268 ms - -
+GET /css/owl.theme.css 304 1.332 ms - -
+GET /css/flexslider.css 304 1.363 ms - -
+GET /css/main.css 304 1.354 ms - -
+GET /css/section.css 304 1.280 ms - -
+GET /css/contact.css 304 0.368 ms - -
+GET /js/jquery-1.11.2.min.js 304 0.319 ms - -
+GET /js/bootstrap.min.js 304 1.764 ms - -
+GET /js/owl.carousel.min.js 304 1.797 ms - -
+GET /js/contact.js 304 1.531 ms - -
+GET /js/jquery.flexslider.js 304 1.441 ms - -
+GET /js/script.js 304 1.410 ms - -
+GET /assets/images/profile.jpg 404 4.214 ms - 3248
+GET /images/section-header.jpeg 304 0.235 ms - -
+^C
+Nguyens-Air:express-authentication nmy$ cd
+Nguyens-Air:~ nmy$ cd Jaspjs
+Nguyens-Air:Jaspjs nmy$ cd
+Nguyens-Air:~ nmy$ 
+Nguyens-Air:~ nmy$ cd jaspjs
+Nguyens-Air:jaspjs nmy$ node app
+GET /profile 302 13.968 ms - 46
+GET / 304 12.083 ms - -
+GET /css/ionicons.min.css 304 5.778 ms - -
+GET /css/owl.carousel.css 304 8.186 ms - -
+GET /css/owl.theme.css 304 9.132 ms - -
+GET /css/flexslider.css 304 9.474 ms - -
+GET /css/main.css 304 9.841 ms - -
+GET /css/section.css 304 9.816 ms - -
+GET /css/contact.css 304 4.151 ms - -
+GET /js/jquery-1.11.2.min.js 304 4.702 ms - -
+GET /js/bootstrap.min.js 304 4.620 ms - -
+GET /js/owl.carousel.min.js 304 4.720 ms - -
+GET /js/contact.js 304 4.676 ms - -
+GET /js/jquery.flexslider.js 304 3.981 ms - -
+GET /js/script.js 304 0.347 ms - -
+GET /images/background-image.jpeg 304 3.253 ms - -
+GET /fonts/ionicons.ttf?v=2.0.0 404 4.865 ms - 2464
+GET /fonts/ionicons.woff?v=2.0.0 404 2.549 ms - 2464
+GET /css/fonts/flexslider-icon.woff 304 0.584 ms - -
+GET /auth/facebook 302 5.666 ms - 0
+GET /signup 200 3.506 ms - 4310
+GET /css/ionicons.min.css 304 8.142 ms - -
+GET /css/owl.carousel.css 304 7.901 ms - -
+GET /css/owl.theme.css 304 8.878 ms - -
+GET /css/flexslider.css 304 9.802 ms - -
+GET /css/main.css 304 9.265 ms - -
+GET /css/section.css 304 8.512 ms - -
+GET /css/contact.css 304 3.141 ms - -
+GET /js/jquery-1.11.2.min.js 304 3.556 ms - -
+GET /js/bootstrap.min.js 304 3.165 ms - -
+GET /js/owl.carousel.min.js 304 3.119 ms - -
+GET /js/contact.js 304 3.250 ms - -
+GET /js/jquery.flexslider.js 304 4.146 ms - -
+GET /js/script.js 304 0.468 ms - -
+GET /images/section-header.jpeg 304 0.294 ms - -
+(node:7393) DeprecationWarning: Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+POST /signup 302 192.766 ms - 60
+GET /profile 200 6.805 ms - 5179
+GET /css/ionicons.min.css 304 5.338 ms - -
+GET /css/owl.carousel.css 304 5.327 ms - -
+GET /css/owl.theme.css 304 4.935 ms - -
+GET /css/flexslider.css 304 4.365 ms - -
+GET /css/main.css 304 4.310 ms - -
+GET /css/section.css 304 3.470 ms - -
+GET /css/contact.css 304 0.939 ms - -
+GET /js/jquery-1.11.2.min.js 304 0.329 ms - -
+GET /js/bootstrap.min.js 304 0.346 ms - -
+GET /js/owl.carousel.min.js 304 0.368 ms - -
+GET /js/contact.js 304 4.887 ms - -
+GET /js/jquery.flexslider.js 304 4.357 ms - -
+GET /js/script.js 304 3.757 ms - -
+GET /assets/images/profile.jpg 404 11.527 ms - 2464
+GET /images/section-header.jpeg 304 0.426 ms - -
+GET /profile 200 3.795 ms - 5219
+GET /css/ionicons.min.css 304 3.816 ms - -
+GET /css/owl.carousel.css 304 3.739 ms - -
+GET /css/owl.theme.css 304 3.957 ms - -
+GET /css/flexslider.css 304 3.890 ms - -
+GET /css/main.css 304 2.810 ms - -
+GET /css/section.css 304 2.776 ms - -
+GET /css/contact.css 304 2.628 ms - -
+GET /js/jquery-1.11.2.min.js 304 0.333 ms - -
+GET /js/bootstrap.min.js 304 0.383 ms - -
+GET /js/owl.carousel.min.js 304 0.547 ms - -
+GET /js/contact.js 304 0.324 ms - -
+GET /js/jquery.flexslider.js 304 0.616 ms - -
+GET /js/script.js 304 0.362 ms - -
+GET /assets/images/profile.jpg 404 3.608 ms - 2464
+GET /images/section-header.jpeg 304 0.323 ms - -
+GET / 304 4.118 ms - -
+GET /css/ionicons.min.css 304 3.319 ms - -
+GET /css/owl.carousel.css 304 3.291 ms - -
+GET /css/owl.theme.css 304 3.346 ms - -
+GET /css/flexslider.css 304 3.128 ms - -
+GET /css/main.css 304 2.684 ms - -
+GET /css/section.css 304 2.445 ms - -
+GET /css/contact.css 304 0.804 ms - -
+GET /js/jquery-1.11.2.min.js 304 0.656 ms - -
+GET /js/bootstrap.min.js 304 0.619 ms - -
+GET /js/owl.carousel.min.js 304 0.854 ms - -
+GET /js/contact.js 304 1.181 ms - -
+GET /js/jquery.flexslider.js 304 1.012 ms - -
+GET /js/script.js 304 0.962 ms - -
+GET /images/background-image.jpeg 304 0.612 ms - -
+GET /fonts/ionicons.ttf?v=2.0.0 404 3.553 ms - 2464
+GET /fonts/ionicons.woff?v=2.0.0 404 2.259 ms - 2464
+GET /css/fonts/flexslider-icon.woff 304 0.280 ms - -
+GET /signup 200 3.656 ms - 4310
+GET /css/ionicons.min.css 304 4.617 ms - -
+GET /css/owl.carousel.css 304 4.069 ms - -
+GET /css/owl.theme.css 304 5.213 ms - -
+GET /css/flexslider.css 304 4.979 ms - -
+GET /css/main.css 304 4.392 ms - -
+GET /css/section.css 304 3.493 ms - -
+GET /css/contact.css 304 5.225 ms - -
+GET /js/jquery-1.11.2.min.js 304 5.189 ms - -
+GET /js/bootstrap.min.js 304 2.396 ms - -
+GET /js/owl.carousel.min.js 304 2.064 ms - -
+GET /js/contact.js 304 1.459 ms - -
+GET /js/jquery.flexslider.js 304 1.377 ms - -
+GET /js/script.js 304 0.310 ms - -
+GET /images/section-header.jpeg 304 0.595 ms - -
+POST /signup 302 82.251 ms - 60
+GET /profile 200 7.780 ms - 5135
+GET /css/ionicons.min.css 304 1.182 ms - -
+GET /css/owl.carousel.css 304 1.187 ms - -
+GET /css/owl.theme.css 304 1.518 ms - -
+GET /css/flexslider.css 304 1.057 ms - -
+GET /css/main.css 304 2.257 ms - -
+GET /css/section.css 304 2.369 ms - -
+GET /css/contact.css 304 0.314 ms - -
+GET /js/jquery-1.11.2.min.js 304 0.329 ms - -
+GET /js/bootstrap.min.js 304 1.361 ms - -
+GET /js/owl.carousel.min.js 304 0.294 ms - -
+GET /js/contact.js 304 0.315 ms - -
+GET /js/jquery.flexslider.js 304 1.040 ms - -
+GET /js/script.js 304 0.334 ms - -
+GET /assets/images/profile.jpg 404 5.980 ms - 2464
+GET /images/section-header.jpeg 304 0.335 ms - -
+GET /profile 200 13.123 ms - 5195
+GET /css/ionicons.min.css 304 0.525 ms - -
+GET /css/owl.carousel.css 304 5.620 ms - -
+GET /css/owl.theme.css 304 5.676 ms - -
+GET /css/flexslider.css 304 5.686 ms - -
+GET /css/main.css 304 5.694 ms - -
+GET /css/section.css 304 1.682 ms - -
+GET /css/contact.css 304 1.602 ms - -
+GET /js/jquery-1.11.2.min.js 304 0.374 ms - -
+GET /js/bootstrap.min.js 304 0.610 ms - -
+GET /js/owl.carousel.min.js 304 0.399 ms - -
+GET /js/contact.js 304 28.886 ms - -
+GET /js/jquery.flexslider.js 304 28.932 ms - -
+GET /js/script.js 304 11.862 ms - -
+GET /assets/images/profile.jpg 404 10.502 ms - 2464
+GET /images/section-header.jpeg 304 1.943 ms - -
+^C
+Nguyens-Air:jaspjs nmy$ node app
+GET / 304 31.940 ms - -
+GET /css/owl.carousel.css 304 4.211 ms - -
+GET /css/flexslider.css 304 3.937 ms - -
+GET /css/ionicons.min.css 304 2.433 ms - -
+GET /css/owl.theme.css 304 2.376 ms - -
+GET /js/bootstrap.min.js 304 2.291 ms - -
+GET /js/owl.carousel.min.js 304 2.363 ms - -
+GET /css/main.css 304 2.218 ms - -
+GET /css/contact.css 304 2.351 ms - -
+GET /js/script.js 304 1.707 ms - -
+GET /css/section.css 304 3.882 ms - -
+GET /js/contact.js 304 3.689 ms - -
+GET /js/jquery.flexslider.js 304 3.042 ms - -
+GET /js/jquery-1.11.2.min.js 304 2.679 ms - -
+GET /images/background-image.jpeg 304 3.417 ms - -
+GET /fonts/ionicons.ttf?v=2.0.0 404 7.381 ms - 2464
+GET /fonts/ionicons.woff?v=2.0.0 404 3.850 ms - 2464
+GET /css/fonts/flexslider-icon.woff 304 1.361 ms - -
+GET /signup 200 8.334 ms - 4310
+GET /css/ionicons.min.css 304 4.836 ms - -
+GET /css/owl.carousel.css 304 4.965 ms - -
+GET /css/owl.theme.css 304 4.843 ms - -
+GET /css/flexslider.css 304 8.425 ms - -
+GET /css/main.css 304 10.249 ms - -
+GET /css/section.css 304 10.398 ms - -
+GET /css/contact.css 304 10.378 ms - -
+GET /js/jquery-1.11.2.min.js 304 7.122 ms - -
+GET /js/bootstrap.min.js 304 6.183 ms - -
+GET /js/owl.carousel.min.js 304 6.719 ms - -
+GET /js/contact.js 304 6.638 ms - -
+GET /js/jquery.flexslider.js 304 6.649 ms - -
+GET /js/script.js 304 5.382 ms - -
+GET /images/section-header.jpeg 304 1.193 ms - -
+events.js:163
+      throw er; // Unhandled 'error' event
+      ^
+
+ReferenceError: name is not defined
+    at /Users/nmy/jaspjs/config/passport.js:36:32
+    at model.Query.<anonymous> (/Users/nmy/jaspjs/node_modules/mongoose/lib/model.js:3737:16)
+    at /Users/nmy/jaspjs/node_modules/kareem/index.js:277:21
+    at /Users/nmy/jaspjs/node_modules/kareem/index.js:131:16
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+    at process._tickCallback (internal/process/next_tick.js:104:9)
+Nguyens-Air:jaspjs nmy$ node app
+GET /index 404 18.668 ms - 2464
+GET /css/ionicons.min.css 304 9.628 ms - -
+GET /css/owl.carousel.css 304 7.627 ms - -
+GET /css/owl.theme.css 304 7.707 ms - -
+GET /css/flexslider.css 304 6.213 ms - -
+GET /css/main.css 304 6.329 ms - -
+GET /css/section.css 304 6.568 ms - -
+GET /css/contact.css 304 1.045 ms - -
+GET / 304 6.599 ms - -
+GET /css/ionicons.min.css 304 4.336 ms - -
+GET /css/owl.carousel.css 304 4.388 ms - -
+GET /css/owl.theme.css 304 3.940 ms - -
+GET /css/flexslider.css 304 3.582 ms - -
+GET /css/main.css 304 2.865 ms - -
+GET /css/section.css 304 2.805 ms - -
+GET /css/contact.css 304 0.397 ms - -
+GET /js/jquery-1.11.2.min.js 304 2.142 ms - -
+GET /js/bootstrap.min.js 304 1.997 ms - -
+GET /js/owl.carousel.min.js 304 1.950 ms - -
+GET /js/contact.js 304 1.597 ms - -
+GET /js/jquery.flexslider.js 304 1.475 ms - -
+GET /js/script.js 304 1.579 ms - -
+GET /images/background-image.jpeg 304 2.172 ms - -
+GET /fonts/ionicons.ttf?v=2.0.0 404 2.797 ms - 2464
+GET /fonts/ionicons.woff?v=2.0.0 404 3.455 ms - 2464
+GET /css/fonts/flexslider-icon.woff 304 0.544 ms - -
+GET /signup 304 3.457 ms - -
+GET /css/ionicons.min.css 304 4.037 ms - -
+GET /css/owl.carousel.css 304 3.125 ms - -
+GET /css/owl.theme.css 304 2.984 ms - -
+GET /css/flexslider.css 304 3.021 ms - -
+GET /css/main.css 304 3.371 ms - -
+GET /css/section.css 304 4.547 ms - -
+GET /css/contact.css 304 3.171 ms - -
+GET /js/jquery-1.11.2.min.js 304 3.264 ms - -
+GET /js/bootstrap.min.js 304 3.306 ms - -
+GET /js/owl.carousel.min.js 304 3.220 ms - -
+GET /js/contact.js 304 3.257 ms - -
+GET /js/jquery.flexslider.js 304 2.092 ms - -
+GET /js/script.js 304 0.381 ms - -
+GET /images/section-header.jpeg 304 0.305 ms - -
+POST /signup 302 20.826 ms - 58
+GET /signup 200 2.345 ms - 4310
+GET /css/ionicons.min.css 304 5.208 ms - -
+GET /css/owl.carousel.css 304 3.662 ms - -
+GET /css/owl.theme.css 304 4.688 ms - -
+GET /css/flexslider.css 304 4.895 ms - -
+GET /css/main.css 304 4.987 ms - -
+GET /css/section.css 304 4.942 ms - -
+GET /css/contact.css 304 5.596 ms - -
+GET /js/jquery-1.11.2.min.js 304 5.406 ms - -
+GET /js/bootstrap.min.js 304 4.169 ms - -
+GET /js/owl.carousel.min.js 304 3.899 ms - -
+GET /js/contact.js 304 3.827 ms - -
+GET /js/jquery.flexslider.js 304 3.866 ms - -
+GET /js/script.js 304 3.329 ms - -
+GET /images/section-header.jpeg 304 1.390 ms - -
+POST /signup 302 2.676 ms - 58
+GET /signup 200 5.095 ms - 4310
+GET /css/ionicons.min.css 304 4.857 ms - -
+GET /css/owl.carousel.css 304 5.576 ms - -
+GET /css/owl.theme.css 304 6.113 ms - -
+GET /css/flexslider.css 304 9.713 ms - -
+GET /css/main.css 304 9.918 ms - -
+GET /css/section.css 304 9.329 ms - -
+GET /css/contact.css 304 4.977 ms - -
+GET /js/bootstrap.min.js 304 3.355 ms - -
+GET /js/jquery-1.11.2.min.js 304 10.148 ms - -
+GET /js/owl.carousel.min.js 304 5.012 ms - -
+GET /js/contact.js 304 4.786 ms - -
+GET /js/jquery.flexslider.js 304 4.316 ms - -
+GET /js/script.js 304 4.142 ms - -
+GET /images/section-header.jpeg 304 1.080 ms - -
+POST /signup 302 19.725 ms - 58
+GET /signup 200 2.729 ms - 4338
+GET /css/ionicons.min.css 304 13.658 ms - -
+GET /css/owl.carousel.css 304 14.122 ms - -
+GET /css/owl.theme.css 304 3.711 ms - -
+GET /css/flexslider.css 304 3.653 ms - -
+GET /css/main.css 304 3.590 ms - -
+GET /css/section.css 304 3.022 ms - -
+GET /css/contact.css 304 0.340 ms - -
+GET /js/jquery-1.11.2.min.js 304 3.240 ms - -
+GET /js/bootstrap.min.js 304 2.794 ms - -
+GET /js/owl.carousel.min.js 304 2.733 ms - -
+GET /js/contact.js 304 2.588 ms - -
+GET /js/jquery.flexslider.js 304 2.381 ms - -
+GET /js/script.js 304 2.617 ms - -
+GET /images/section-header.jpeg 304 0.313 ms - -
+events.js:163
+      throw er; // Unhandled 'error' event
+      ^
+
+ReferenceError: name is not defined
+    at /Users/nmy/jaspjs/config/passport.js:37:32
+    at model.Query.<anonymous> (/Users/nmy/jaspjs/node_modules/mongoose/lib/model.js:3737:16)
+    at /Users/nmy/jaspjs/node_modules/kareem/index.js:277:21
+    at /Users/nmy/jaspjs/node_modules/kareem/index.js:131:16
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+    at process._tickCallback (internal/process/next_tick.js:104:9)
+Nguyens-Air:jaspjs nmy$ node app
+GET /signup 200 18.591 ms - 4310
+GET /css/ionicons.min.css 304 7.179 ms - -
+GET /css/owl.carousel.css 304 7.408 ms - -
+GET /css/owl.theme.css 304 7.317 ms - -
+GET /css/flexslider.css 304 7.334 ms - -
+GET /css/main.css 304 7.526 ms - -
+GET /css/section.css 304 7.587 ms - -
+GET /css/contact.css 304 2.134 ms - -
+GET /js/jquery-1.11.2.min.js 304 2.206 ms - -
+GET /js/bootstrap.min.js 304 2.541 ms - -
+GET /js/owl.carousel.min.js 304 2.658 ms - -
+GET /js/contact.js 304 4.323 ms - -
+GET /js/jquery.flexslider.js 304 4.464 ms - -
+GET /js/script.js 304 2.061 ms - -
+GET /images/section-header.jpeg 304 0.235 ms - -
+(node:7975) DeprecationWarning: Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+POST /signup 302 129.390 ms - 60
+GET /profile 200 15.630 ms - 5199
+GET /css/ionicons.min.css 304 1.743 ms - -
+GET /css/owl.carousel.css 304 1.712 ms - -
+GET /css/owl.theme.css 304 2.663 ms - -
+GET /css/flexslider.css 304 2.699 ms - -
+GET /css/main.css 304 3.511 ms - -
+GET /css/section.css 304 3.676 ms - -
+GET /css/contact.css 304 3.873 ms - -
+GET /js/jquery-1.11.2.min.js 304 1.258 ms - -
+GET /js/bootstrap.min.js 304 1.039 ms - -
+GET /js/owl.carousel.min.js 304 0.996 ms - -
+GET /js/contact.js 304 1.331 ms - -
+GET /js/jquery.flexslider.js 304 1.401 ms - -
+GET /js/script.js 304 1.274 ms - -
+GET /assets/images/profile.jpg 404 7.083 ms - 2464
+GET /images/section-header.jpeg 304 0.284 ms - -
+^C
+Nguyens-Air:jaspjs nmy$ node app
+module.js:472
+    throw err;
+    ^
+
+Error: Cannot find module 'cors'
+    at Function.Module._resolveFilename (module.js:470:15)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (/Users/nmy/jaspjs/app.js:13:12)
+    at Module._compile (module.js:571:32)
+    at Object.Module._extensions..js (module.js:580:10)
+    at Module.load (module.js:488:32)
+    at tryModuleLoad (module.js:447:12)
+    at Function.Module._load (module.js:439:3)
+Nguyens-Air:jaspjs nmy$ node app
+GET /profile 302 12.849 ms - 46
+GET / 304 12.369 ms - -
+GET /css/ionicons.min.css 304 7.161 ms - -
+GET /css/owl.carousel.css 304 7.575 ms - -
+GET /css/owl.theme.css 304 7.732 ms - -
+GET /css/flexslider.css 304 7.661 ms - -
+GET /css/main.css 304 9.413 ms - -
+GET /css/section.css 304 9.205 ms - -
+GET /css/contact.css 304 4.003 ms - -
+GET /js/jquery-1.11.2.min.js 304 3.962 ms - -
+GET /js/bootstrap.min.js 304 4.410 ms - -
+GET /js/owl.carousel.min.js 304 4.404 ms - -
+GET /js/contact.js 304 2.977 ms - -
+GET /js/jquery.flexslider.js 304 2.212 ms - -
+GET /js/script.js 304 0.719 ms - -
+GET /images/background-image.jpeg 304 1.909 ms - -
+GET /fonts/ionicons.ttf?v=2.0.0 404 4.401 ms - 2464
+GET /fonts/ionicons.woff?v=2.0.0 404 2.738 ms - 2464
+GET /css/fonts/flexslider-icon.woff 304 0.677 ms - -
+GET /signup 200 4.999 ms - 4310
+GET /css/ionicons.min.css 304 8.296 ms - -
+GET /css/owl.carousel.css 304 7.448 ms - -
+GET /css/owl.theme.css 304 7.618 ms - -
+GET /css/flexslider.css 304 6.018 ms - -
+GET /css/main.css 304 5.945 ms - -
+GET /css/section.css 304 17.352 ms - -
+GET /css/contact.css 304 6.780 ms - -
+GET /js/jquery-1.11.2.min.js 304 5.486 ms - -
+GET /js/bootstrap.min.js 304 5.810 ms - -
+GET /js/owl.carousel.min.js 304 8.178 ms - -
+GET /js/contact.js 304 8.327 ms - -
+GET /js/jquery.flexslider.js 304 1.138 ms - -
+GET /js/script.js 304 1.194 ms - -
+GET /images/section-header.jpeg 304 0.343 ms - -
+(node:8272) DeprecationWarning: Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+POST /signup 302 645.944 ms - 60
+GET /profile 200 294.240 ms - 5199
+GET /css/owl.carousel.css 304 4.664 ms - -
+GET /css/ionicons.min.css 304 4.644 ms - -
+GET /css/owl.theme.css 304 4.797 ms - -
+GET /css/flexslider.css 304 3.941 ms - -
+GET /css/main.css 304 3.820 ms - -
+GET /css/section.css 304 2.934 ms - -
+GET /css/contact.css 304 0.629 ms - -
+GET /js/jquery-1.11.2.min.js 304 1.090 ms - -
+GET /js/bootstrap.min.js 304 0.542 ms - -
+GET /js/owl.carousel.min.js 304 0.319 ms - -
+GET /js/contact.js 304 0.424 ms - -
+GET /js/jquery.flexslider.js 304 1.248 ms - -
+GET /js/script.js 304 1.238 ms - -
+GET /images/section-header.jpeg 304 0.343 ms - -
+GET /assets/images/profile.jpg 404 249.902 ms - 2464
+^C
+Nguyens-Air:jaspjs nmy$ 

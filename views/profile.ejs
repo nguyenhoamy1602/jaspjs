@@ -1,6 +1,53 @@
 <% include partials/head %>
 
   <body>
+  <% include partials/navlogin %>
+
+  <section class="section-background">
+    <div class="container">
+      <h2 class="page-header">
+        My profile
+      </h2>
+    </div> <!-- /.container -->
+  </section> <!-- /.section-background -->
+  
+
+  <section class="features section-wrapper">
+    <div class="container">
+
+      <h2 class="section-title">
+        <% user.local.name %>
+      </h2>
+      <p class="section-subtitle">
+        <% if (user.local.email != null) { %>
+            <img src="https://avatars.io/gravatar/<%= user.local.email %>/140" class="img-circle"><br>
+            <strong>Name</strong>: <%= user.local.password %><br>
+            <strong>Email</strong>: <%= user.local.email %><br>
+          <% } %>
+      </p>
+      <div class="row custom-table">
+        <div class="grid-50 table-cell">
+          <img src="assets/images/profile.jpg" alt="" class="features-img img-responsive _pos-abs">
+        </div>
+        <div class="grid-50 table-cell">
+          <p class="features-details">
+            I am the Head Chef at Sun Wah Mordialloc, which has been in business since 1969. Born in Hong Kong, I came to Australia shortly after getting married to my husband, Albert who has be in the food business since a very young age.  Now some 37+ years in the restaurant business, I started off as a hostess of the restaurant which exposed me to taste all different kinds of cuisines and cultures. Now I can’t live without the inner life as a chef. My husband is the one that inspired me to become a chef and taught me the basis of chinese Asian cookery. Love to read cookbooks and passionate about creating innovative dishes that are simple especially using the slow cooking process like we do for our braised beef ribs. Outside of the kitchen I am a big TV drama fan and love yoga. <a href="">View more</a>
+
+          </p>
+          <ul class="features-list">
+            <li>Western Cuisine</li>
+            <li>Desserts</li>
+            <li>Seafood</li>
+            <li>Knife Skill</li>
+          </ul>
+        </div>
+
+
+      </div> <!-- /.row -->
+    </div> <!-- /.container -->
+  </section> <!-- /.features -->
+
+
     <div class="col-sm-8 col-sm-offset-2">
       <div class="text-center">
         <h1 class=" fa fa-user"> Profile</h1><br>
@@ -20,26 +67,9 @@
             <strong>email</strong>: <%= user.facebook.email %><br>
             <strong>name</strong>: <%= user.facebook.name %>
           <% } %>
-
-          <% if (user.twitter.id != null) { %>
-            <h2 class="fa fa-twitter"> Twitter</h2><br>
-            <img src="https://avatars.io/twitter/<%= user.twitter.username %>" class="img-circle"><br>
-            <strong>id</strong>: <%= user.twitter.id %><br>
-            <strong>token</strong>: <%= user.twitter.token %><br>
-            <strong>username</strong>: <%= user.twitter.username %><br>
-            <strong>displayName</strong>: <%= user.twitter.displayName %>
-          <% } %>
-
-          <% if (user.google.id != null) { %>
-            <h2 class="fa fa-google-plus"> Google</h2><br>
-            <img src="https://avatars.io/gravatar/<%= user.google.email %>/140" class="img-circle"><br>
-            <strong>id</strong>: <%= user.google.id %><br>
-            <strong>token</strong>: <%= user.google.token %><br>
-            <strong>email</strong>: <%= user.google.email %><br>
-            <strong>name</strong>: <%= user.google.name %>
-          <% } %>
         </div>
       </div>
     </div>
+    <% include partials/foot %>
   </body>
 </html>

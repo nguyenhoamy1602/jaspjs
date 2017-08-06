@@ -1,13 +1,112 @@
 <% include partials/head %>
 
   <body>
-    <div class="col-sm-8 col-sm-offset-2">
-      <div class="jumbotron text-center">
-        <h1>Express Authentication</h1>
-        <p class="lead">A simple authentication app built with express, node & passport.</p>
+    <% include partials/nav %>
 
-        <a href="/login" class="btn btn-default"><span class="fa fa-sign-in"></span> Login</a>
-        <a href="/signup" class="btn btn-default"><span class="fa fa-user"></span> Signup</a>
+    <section class="tour section-wrapper container">
+    <h2 class="section-title">
+      Find a professional peer who can provide confidence in you
+    </h2>
+    <p style ="text-align: center">
+      Or Find A Job directly
+    </p>
+    
+    <div class="row">
+      <div class="col-md-2 col-sm-12">
+          <div class="form-group">
+            <select class="form-control border-radius" id="sel1">
+              <option>All</option>
+              <option>Assessor</option>
+              <option>Employee</option>
+              <option>Employer</option>
+            </select>
+          </div>
+      </div>
+
+      <div class="col-md-8 col-sm-12">
+        <div class="input-group">
+          <input type="text" class="form-control border-radius border-right" placeholder="Key word, Job Title or Company Name"/>
+          <span class="input-group-addon border-radius custom-addon">
+          </span>
+        </div>
+      </div>
+
+      <div class="col-md-2 col-sm-12">
+        <div class="btn btn-default border-radius custom-button">
+          <a href="chef.html" style="color:#ffffff">Search<a>
+        </div>
+      </div>
+    </div>
+    </section> <!-- /.tour -->
+
+    <div id="header">
+        <div class="flexslider">
+            <ul class="slides">
+                <li class="slider-item" style="background-image: url('images/background-image.jpeg')">
+                    <div class="intro container">
+                        <div class="inner-intro">
+                       
+                            <h1 class="header-title">
+                                <span>About Us</span>
+                            </h1>
+                            <p class="header-sub-title">
+Employment has always been a struggle. Even more so when you are moving to a new city or country. 
+
+
+                            </p>
+                            <p class="header-sub-title">
+For job seekers it can be very difficult to understand what is required in resume or job application. <br/> For employers it can be expensive and time consuming to sort through all of the potential candidates in the backlog. 
+
+
+                            </p>
+                            <p class="header-sub-title"> 
+We are here to make this process simple for both sides but especially for you.
+
+                            </p>
+                            <a href="/login" class="btn custom-btn"><span class="fa fa-sign-in"></span> Login</a>
+                            <a href="/signup" class="btn custom-btn"><span class="fa fa-user"></span> Signup</a>                          
+                          
+                        </div>
+                    </div>
+                </li> <!-- /.slider-item -->
+            </ul> <!-- /.slides -->
+        </div> <!-- /.flexslider -->
+    </div> <!-- /#header -->
+<!-- Find a Tour -->
+
+
+
+
+
+  <div class="subscribe section-wrapper">
+    <a class="brand-logo" href="index.html" title="HOME"><i class="ion-android-share-alt"></i> <span>Jasp</span></a>
+    <p class="subscribe-now">
+      Subscribe to our Newsletter
+    </p>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3">
+          <div class="input-group">
+            <input type="email" class="form-control border-radius" placeholder="Email address">
+            <span class="input-group-btn">
+              <button class="btn btn-default border-radius custom-sub-btn" type="button">DONE</button>
+            </span>
+          </div><!-- /input-group -->
+        </div>
+      </div>
+    </div>
+          
+  
+  
+    <ul class="social-icon">
+      <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+      <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+      <li><a href="#"><i class="ion-social-linkedin-outline"></i></a></li>
+      <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+    </ul>
+  </div> <!-- /.subscribe -->
+
+ 
         <a href="/auth/facebook" class="btn btn-primary"><span class="fa fa-facebook"></span> Facebook</a>
         <a href="/auth/twitter" class="btn btn-info"><span class="fa fa-twitter"></span> Twitter</a>
         <a href="/auth/google" class="btn btn-danger"><span class="fa fa-google-plus"></span> Google</a>
@@ -15,5 +114,8 @@
       </div>
       <p>Demo by Daniel Gynn. Check out <a href="http://www.danielgynn.com" target="_blank">danielgynn.com</a> for more.</p>
     </div>
+
+    <% include partials/foot %>
+
   </body>
 </html>

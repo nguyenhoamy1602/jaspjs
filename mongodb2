@@ -1,0 +1,104 @@
+Last login: Tue May  9 13:12:56 on ttys000
+Nguyens-Air:express-authentication nmy$ mongo
+MongoDB shell version v3.4.4
+connecting to: mongodb://127.0.0.1:27017
+MongoDB server version: 3.4.4
+Server has startup warnings: 
+2017-05-09T13:13:26.332+1000 I CONTROL  [initandlisten] 
+2017-05-09T13:13:26.332+1000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-05-09T13:13:26.332+1000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-05-09T13:13:26.333+1000 I CONTROL  [initandlisten] 
+2017-05-09T13:13:26.333+1000 I CONTROL  [initandlisten] 
+2017-05-09T13:13:26.333+1000 I CONTROL  [initandlisten] ** WARNING: soft rlimits too low. Number of files is 256, should be at least 1000
+> use expressauth
+switched to db expressauth
+> db.users.find()
+{ "_id" : ObjectId("591134710d2aae153ec50ef5"), "local" : { "password" : "$2a$08$yaXcrG/LqoSsdYCKKnwuouIwjvTRmOagimt2zmBDEJ0mZISCcztsC", "email" : "nguyenhoamy1602@gmail.com" }, "__v" : 0 }
+> db.users.find()
+{ "_id" : ObjectId("591134710d2aae153ec50ef5"), "local" : { "password" : "$2a$08$yaXcrG/LqoSsdYCKKnwuouIwjvTRmOagimt2zmBDEJ0mZISCcztsC", "email" : "nguyenhoamy1602@gmail.com" }, "__v" : 0 }
+{ "_id" : ObjectId("59114e020d2aae153ec50ef6"), "local" : { "password" : "$2a$08$ETA7PD9oz5bExYw03FG5LehXyoOMVjMXc54kka75M4hGBpjmYIPUe", "email" : "daohoa1962@gmail.com" }, "__v" : 0 }
+> db.users.find()
+{ "_id" : ObjectId("591134710d2aae153ec50ef5"), "local" : { "password" : "$2a$08$yaXcrG/LqoSsdYCKKnwuouIwjvTRmOagimt2zmBDEJ0mZISCcztsC", "email" : "nguyenhoamy1602@gmail.com" }, "__v" : 0 }
+{ "_id" : ObjectId("59114e020d2aae153ec50ef6"), "local" : { "password" : "$2a$08$ETA7PD9oz5bExYw03FG5LehXyoOMVjMXc54kka75M4hGBpjmYIPUe", "email" : "daohoa1962@gmail.com" }, "__v" : 0 }
+{ "_id" : ObjectId("5911507e0d2aae153ec50ef7"), "local" : { "password" : "$2a$08$BJGpT7fKrIJ1awbIcL2I6uxWDtZ6PKV2t9DhyBkFkNR6FXew1pCTi", "email" : "n" }, "__v" : 0 }
+{ "_id" : ObjectId("591151300d2aae153ec50ef8"), "local" : { "password" : "$2a$08$bsmJO7oMZoinIVQV.5sLbO2n60a.W/jWaDq.lMfMFyF5BEjg9FsaW", "email" : "nm" }, "__v" : 0 }
+{ "_id" : ObjectId("591151c40d2aae153ec50ef9"), "local" : { "password" : "$2a$08$T59itqgZCVTTivoE7iUjgef2GSmJTH0bPgovCBo0O1MGQS34cyAwO", "email" : "nhat" }, "__v" : 0 }
+{ "_id" : ObjectId("591151f60d2aae153ec50efa"), "local" : { "password" : "$2a$08$MYZ.4Rxu7nDq5tzDe58VTOw1Ml/7hnc46HHffiAppTy2GRLIRbWJG", "email" : "NhatNguyen" }, "__v" : 0 }
+> use expressauth
+switched to db expressauth
+> db.users.find()
+{ "_id" : ObjectId("591134710d2aae153ec50ef5"), "local" : { "password" : "$2a$08$yaXcrG/LqoSsdYCKKnwuouIwjvTRmOagimt2zmBDEJ0mZISCcztsC", "email" : "nguyenhoamy1602@gmail.com" }, "__v" : 0 }
+{ "_id" : ObjectId("59114e020d2aae153ec50ef6"), "local" : { "password" : "$2a$08$ETA7PD9oz5bExYw03FG5LehXyoOMVjMXc54kka75M4hGBpjmYIPUe", "email" : "daohoa1962@gmail.com" }, "__v" : 0 }
+{ "_id" : ObjectId("5911507e0d2aae153ec50ef7"), "local" : { "password" : "$2a$08$BJGpT7fKrIJ1awbIcL2I6uxWDtZ6PKV2t9DhyBkFkNR6FXew1pCTi", "email" : "n" }, "__v" : 0 }
+{ "_id" : ObjectId("591151300d2aae153ec50ef8"), "local" : { "password" : "$2a$08$bsmJO7oMZoinIVQV.5sLbO2n60a.W/jWaDq.lMfMFyF5BEjg9FsaW", "email" : "nm" }, "__v" : 0 }
+{ "_id" : ObjectId("591151c40d2aae153ec50ef9"), "local" : { "password" : "$2a$08$T59itqgZCVTTivoE7iUjgef2GSmJTH0bPgovCBo0O1MGQS34cyAwO", "email" : "nhat" }, "__v" : 0 }
+{ "_id" : ObjectId("591151f60d2aae153ec50efa"), "local" : { "password" : "$2a$08$MYZ.4Rxu7nDq5tzDe58VTOw1Ml/7hnc46HHffiAppTy2GRLIRbWJG", "email" : "NhatNguyen" }, "__v" : 0 }
+{ "_id" : ObjectId("5911538a0d2aae153ec50efb"), "local" : { "password" : "$2a$08$t9OzKDeVAbPOSZqNc9KjvexqaeGgXv4/Mii83NtXYFSkdUzobthde", "email" : "nmy" }, "__v" : 0 }
+> use jasp
+switched to db jasp
+> db.users.find()
+> db.users.find()
+{ "_id" : ObjectId("59115972194f4a1ce1e97342"), "local" : { "password" : "$2a$08$pWttZIjVBFJOvgzxV0FoK.igObRurR2R5XLiqcKJ9sH9ajRjjQaAu", "email" : "nguyenhoamy1602@gmail.com" }, "__v" : 0 }
+> db.users.find()
+{ "_id" : ObjectId("59115972194f4a1ce1e97342"), "local" : { "password" : "$2a$08$pWttZIjVBFJOvgzxV0FoK.igObRurR2R5XLiqcKJ9sH9ajRjjQaAu", "email" : "nguyenhoamy1602@gmail.com" }, "__v" : 0 }
+{ "_id" : ObjectId("59115b6e194f4a1ce1e97343"), "local" : { "password" : "$2a$08$h4/jgLkkebowRMYJcAabNOeHkXsUZWmpDRgDD57GpC0Duf4mOm8Wa", "email" : "test" }, "__v" : 0 }
+> db.users.find().pretty()
+{
+	"_id" : ObjectId("59115972194f4a1ce1e97342"),
+	"local" : {
+		"password" : "$2a$08$pWttZIjVBFJOvgzxV0FoK.igObRurR2R5XLiqcKJ9sH9ajRjjQaAu",
+		"email" : "nguyenhoamy1602@gmail.com"
+	},
+	"__v" : 0
+}
+{
+	"_id" : ObjectId("59115b6e194f4a1ce1e97343"),
+	"local" : {
+		"password" : "$2a$08$h4/jgLkkebowRMYJcAabNOeHkXsUZWmpDRgDD57GpC0Duf4mOm8Wa",
+		"email" : "test"
+	},
+	"__v" : 0
+}
+{
+	"_id" : ObjectId("5911a3074eddec1f27c0e858"),
+	"local" : {
+		"password" : "$2a$08$dUxOzEpRLnDRnedG0fDTluWDcZjdAP0u58b6HxZm6qbeeUTFvCPQu",
+		"email" : "test2"
+	},
+	"__v" : 0
+}
+> db.users.find().pretty()
+{
+	"_id" : ObjectId("59115972194f4a1ce1e97342"),
+	"local" : {
+		"password" : "$2a$08$pWttZIjVBFJOvgzxV0FoK.igObRurR2R5XLiqcKJ9sH9ajRjjQaAu",
+		"email" : "nguyenhoamy1602@gmail.com"
+	},
+	"__v" : 0
+}
+{
+	"_id" : ObjectId("59115b6e194f4a1ce1e97343"),
+	"local" : {
+		"password" : "$2a$08$h4/jgLkkebowRMYJcAabNOeHkXsUZWmpDRgDD57GpC0Duf4mOm8Wa",
+		"email" : "test"
+	},
+	"__v" : 0
+}
+{
+	"_id" : ObjectId("5911a3074eddec1f27c0e858"),
+	"local" : {
+		"password" : "$2a$08$dUxOzEpRLnDRnedG0fDTluWDcZjdAP0u58b6HxZm6qbeeUTFvCPQu",
+		"email" : "test2"
+	},
+	"__v" : 0
+}
+> ^C
+bye
+Nguyens-Air:express-authentication nmy$ mongo ds133311.mlab.com:33311/jasp_users -u jasp -p 1234
+MongoDB shell version v3.4.4
+connecting to: mongodb://ds133311.mlab.com:33311/jasp_users
+MongoDB server version: 3.2.13
+WARNING: shell and server versions do not match
+rs-ds133311:PRIMARY> db.users.find()
+{ "_id" : ObjectId("5911aa5b87ee8a20508d1575"), "local" : { "password" : "$2a$08$B4zmyzEdfgoQs5RFiyiTXe3Cmip7TkPDJvma152nIKB.HDHLEDZza", "email" : "test3" }, "__v" : 0 }
+rs-ds133311:PRIMARY> 
